@@ -1,4 +1,4 @@
-<footer class="w-full bg-white">
+<footer class="w-full bg-white ">
 
     <div class="max-w-7xl mx-auto px-24 py-12 lg:py-16 ">
 
@@ -11,9 +11,7 @@
                 sm:grid-cols-2
                 lg:grid-cols-4
                 gap-10
-                lg:gap-8
-                
-            "
+                lg:gap-8"
         >
 
             {{#each footer.columns}}
@@ -24,10 +22,10 @@
                         class="
                             text-[18px]
                             text-black
-                            font-semibold
+                            font-[400]
                             mb-5
-                            
-                        "
+                            border-b border-gray-300
+                            font-unbounded"
                     >
                         {{title}}
                     </h3>
@@ -46,8 +44,7 @@
                                         text-black]
                                         hover:text-white
                                         transition-colors
-                                        duration-200
-                                    "
+                                        duration-200"
                                 >
                                     {{name}}
                                 </a>
@@ -71,10 +68,7 @@
             class="
                 mt-12
                 pt-6
-                text-center
-
-            "
-        >
+                text-center">
 
             <p class="text-sm text-black text-[15px]">
                 {{footer.copyright}}
