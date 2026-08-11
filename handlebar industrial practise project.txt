@@ -1,0 +1,33 @@
+technova/
+│
+├── index.html
+│
+├── css/
+│   ├── style.css
+│   └── responsive.css
+│
+├── js/
+│   ├── app.js
+│   ├── data.js
+│   └── components/
+│       ├── navbar.js
+│       ├── carousel.js
+│       ├── accordion.js
+│       └── animations.js
+│
+├── templates/
+│   ├── pages/
+│   │   └── home.hbs
+│   │
+│   └── partials/
+│       ├── navbar.hbs
+│       ├── hero.hbs
+│       ├── services.hbs
+│       ├── about.hbs
+│       ├── testimonials.hbs
+│       ├── faq.hbs
+│       └── footer.hbs
+│
+└── assets/
+    ├── images/
+    └── icons/

@@ -1,0 +1,224 @@
+<section
+    id="Section5"
+    class="w-full py-16 lg:py-24"
+>
+
+    <div class="max-w-7xl mx-auto px-5">
+
+
+        <!-- =========================
+             HEADING
+        ========================== -->
+
+        <div class="max-w-3xl mx-auto text-center">
+
+            <h5
+                class="text-[20px] font-medium text-[#416BFA] mb-3"
+            >
+                {{featuresSection.label}}
+            </h5> 
+
+
+            <h2
+                class="text-3xl md:text-4xl lg:text-[40px] leading-tight font-[700] text-gray-900"
+            >
+                {{featuresSection.title}}
+            </h2>
+
+
+            <p
+                class="mt-5 text-base md:text-lg leading-7 text-gray-600"
+            >
+                {{featuresSection.description}}
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+             TABS + IMAGE
+        ========================== -->
+
+        <div
+            class="
+                mt-14
+                flex
+                flex-col
+                lg:flex-row
+                items-center
+                justify-between
+                gap-12
+            "
+        >
+
+
+            <!-- =========================
+                 LEFT TAB LIST
+            ========================== -->
+
+            <div
+                class="w-full lg:w-5/12"
+            >
+
+                <ul
+                    id="feature-tabs"
+                    class="space-y-2"
+                >
+
+                    {{#each featuresSection.tabs}}
+
+                        <li>
+
+                            <button
+                                type="button"
+                                data-tab="{{id}}"
+                                class="
+                                    feature-tab
+                                    w-full
+                                    flex
+                                    items-center
+                                    justify-between
+                                    py-5
+                                    border-b
+                                    border-gray-200
+                                    text-left
+                                    transition
+                                "
+                            >
+
+                                <span
+                                    class="text-2xl md:text-3xl font-[700]"
+                                >
+                                    {{title}}
+                                </span>
+
+
+                                <span
+                                    class="
+                                        text-2xl
+                                        transition-transform
+                                        duration-300
+                                    "
+                                >
+                                    →
+                                </span>
+
+                            </button>
+
+                        </li>
+
+                    {{/each}}
+
+                </ul>
+
+            </div>
+
+
+            <!-- =========================
+                 RIGHT IMAGE
+            ========================== -->
+
+            <div
+                class="
+                    w-full
+                    lg:w-6/12
+                    flex
+                    justify-center
+                "
+            >
+
+                <div
+                    class="
+                        relative
+                        w-full
+                        max-w-lg
+                        flex
+                        justify-center
+                    "
+                >
+
+                    {{#each featuresSection.tabs}}
+
+                        <div
+                            class="
+                                feature-panel
+                                {{#unless @first}}
+                                    hidden
+                                {{/unless}}
+                            "
+                            data-panel="{{id}}"
+                        >
+
+                            <div class="relative">
+
+                                <img
+                                    src="{{image}}"
+                                    alt="{{title}}"
+                                    class="
+                                        relative
+                                        z-10
+                                        w-full
+                                        max-w-md
+                                        object-contain
+                                    "
+                                >
+
+
+                                <!-- Background circle -->
+
+                                <img
+                                    src="assets/images/Ellipse 51 (1).png"
+                                    alt=""
+                                    class="
+                                        absolute
+                                        inset-0
+                                        w-full
+                                        h-full
+                                        object-contain
+                                        -z-0
+                                    "
+                                >
+
+                            </div>
+
+                        </div>
+
+                    {{/each}}
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             VIEW ALL BUTTON
+        ========================== -->
+
+        <div class="text-center mt-12">
+
+            <a
+                href="{{featuresSection.buttonLink}}"
+                class="
+                    inline-block
+                    px-6
+                    py-3
+                    rounded-[30px]
+                    bg-white
+                    border
+                    border-r-4 border-b-4 border-black
+                    text-sm
+                    font-medium
+                    hover:bg-blue-700
+                     hover:text-white
+                    transition-all duration-300 ease-linear hover:-translate-y-[0.25em]"
+            >
+                {{featuresSection.buttonText}}
+            </a>
+
+        </div>
+
+    </div>
+
+</section>

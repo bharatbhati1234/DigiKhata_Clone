@@ -1,0 +1,131 @@
+<section class="w-full py-16 lg:py-24">
+
+    <div class="max-w-7xl mx-auto px-5">
+
+        <!-- Section Heading -->
+
+        <div class="text-center max-w-3xl mx-auto mb-12">
+
+            <h5 class="text-[20px] font-medium text-[#416BFA] mb-3">
+                Services
+            </h5>
+
+            <h2
+                class="
+                    text-3xl
+                    md:text-4xl
+                    lg:text-[40px]
+                    font-[700]
+                    leading-tight
+                    text-gray-900
+                "
+            >
+                Financial services for your needs
+            </h2>
+
+            <p
+                class="
+                    mt-5
+                    text-base
+                    md:text-lg
+                    leading-7
+                    text-gray-600
+                "
+            >
+                Experience unparalleled financial services and offerings
+                thoughtfully designed to meet your diverse needs.
+            </p>
+
+        </div>
+
+
+        <!-- Services Grid -->
+
+        <div class="w-full">
+
+            <div
+                id="serviceSlider"
+                class="
+                    grid
+                    grid-cols-2
+                    sm:grid-cols-3
+                    lg:grid-cols-6
+                    gap-4
+                    md:gap-6
+                "
+            >
+
+                {{#each services}}
+
+                    <div
+                        class="
+                            flex
+                            flex-col
+                            items-center
+                            justify-between
+                            p-6
+                            bg-gray-50
+                            rounded-xl
+                            border
+                            border-gray-100
+                            text-center
+                            group
+                            cursor-pointer
+                            
+                            transition-all duration-300 ease-linear hover:shadow-[0px_0px_8px_rgba(65,107,250,0.81)]
+                        "
+                    >
+
+                        <h4
+                            class="
+                                text-lg
+                                font-semibold
+                                text-gray-800
+                                mb-4
+                                transition-colors
+                                
+                            "
+                        >
+                            {{title}}
+                        </h4>
+
+
+                        <div
+                            class="
+                                w-16
+                                h-16
+                                flex
+                                items-center
+                                justify-center
+                            "
+                        >
+
+                            <img
+                                src="{{image}}"
+                                alt="{{title}}"
+                                class="
+                                    max-w-full
+                                    max-h-full
+                                    object-contain
+                                "
+                            >
+
+                        </div>
+
+                    </div>
+
+                {{else}}
+
+                    <p class="col-span-full text-center text-gray-500">
+                        No services available.
+                    </p>
+
+                {{/each}}
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

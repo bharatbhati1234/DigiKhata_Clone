@@ -1,0 +1,87 @@
+<footer class="w-full bg-white">
+
+    <div class="max-w-7xl mx-auto px-24 py-12 lg:py-16 ">
+
+        <!-- Footer Columns -->
+
+        <div
+            class="
+                grid
+                grid-cols-1
+                sm:grid-cols-2
+                lg:grid-cols-4
+                gap-10
+                lg:gap-8
+                
+            "
+        >
+
+            {{#each footer.columns}}
+
+                <div>
+
+                    <h3
+                        class="
+                            text-[18px]
+                            text-black
+                            font-semibold
+                            mb-5
+                            
+                        "
+                    >
+                        {{title}}
+                    </h3>
+
+
+                    <ul class="space-y-3">
+
+                        {{#each links}}
+
+                            <li>
+
+                                <a
+                                    href="{{url}}"
+                                    class="
+                                        text-base
+                                        text-black]
+                                        hover:text-white
+                                        transition-colors
+                                        duration-200
+                                    "
+                                >
+                                    {{name}}
+                                </a>
+
+                            </li>
+
+                        {{/each}}
+
+                    </ul>
+
+                </div>
+
+            {{/each}}
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div
+            class="
+                mt-12
+                pt-6
+                text-center
+
+            "
+        >
+
+            <p class="text-sm text-black text-[15px]">
+                {{footer.copyright}}
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>

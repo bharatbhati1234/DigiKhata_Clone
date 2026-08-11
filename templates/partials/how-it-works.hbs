@@ -1,0 +1,150 @@
+<section class="w-full py-16 lg:py-24">
+
+    <div class="max-w-7xl mx-auto px-5">
+
+        <!-- Heading -->
+
+        <div class="max-w-3xl mx-auto text-center mb-12">
+
+            <h5
+                class="
+                    text-[20px]
+                    font-medium
+                    text-[#416BFA]
+
+                    mb-3
+                "
+            >
+                {{howItWorks.label}}
+            </h5>
+
+
+            <h3
+                class="
+                    text-[32px]
+                    md:text-3xl
+                    font-[700]
+                    leading-tight
+                    text-gray-900">
+                {{howItWorks.title}}
+            </h3>
+
+        </div>
+
+
+        <!-- Steps -->
+
+        <div
+            class="
+                grid
+                grid-cols-1
+                md:grid-cols-3
+                gap-10
+                lg:gap-14
+            "
+        >
+
+            {{#each howItWorks.steps}}
+
+                <div
+                    class="
+                        flex
+                        flex-col
+                        items-center
+                        text-center
+                    "
+                >
+
+                    <!-- Image -->
+
+                    <div
+                        class="
+                            relative
+                            w-[160px]
+                            max-w-xs
+                            flex
+                            justify-center
+                        "
+                    >
+
+                        <img
+                            src="{{image}}"
+                            alt="{{title}}"
+                            class="
+                                w-full
+                                h-auto
+                                object-contain
+                            "
+                        >
+
+
+                        <!-- Number -->
+
+                        <div
+                            class="
+                                absolute
+                                bottom-16
+                                right-34
+                                w-10
+                                h-10
+                                rounded-full
+                                bg-blue-600
+                                text-white
+                                flex
+                                items-center
+                                justify-center
+                                shadow-md
+                            "
+                        >
+
+                            <span
+                                class="
+                                    text-sm
+                                    font-semibold
+                                "
+                            >
+                                {{number}}
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Title -->
+
+                    <h4
+                        class="
+                            mt-6
+                            text-lg
+                            font-semibold
+                            text-gray-900
+                        "
+                    >
+                        {{title}}
+                    </h4>
+
+
+                    <!-- Description -->
+
+                    <p
+                        class="
+                            mt-3
+                            max-w-sm
+                            text-base
+                            leading-7
+                            text-gray-600
+                        "
+                    >
+                        {{description}}
+                    </p>
+
+                </div>
+
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</section>
