@@ -228,6 +228,36 @@ async function renderFooter() {
         );
 }
 
+function initScrollReveal() {
+
+    const sections = document.querySelectorAll(".scroll-reveal");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("show");
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    sections.forEach((section) => {
+        observer.observe(section);
+    });
+}
+
 
 
 
@@ -254,6 +284,9 @@ async function initApp() {
     await renderAppStore();
 
     await renderFooter();
+
+        initScrollReveal();
+
 
 
 

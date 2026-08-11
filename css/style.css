@@ -1,3 +1,7 @@
+
+
+/* font family k liye unbounded or inter font family add ki hai  */
+
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap');
 
 .font-unbounded {
@@ -7,6 +11,11 @@
 * {
     font-family: 'Inter', sans-serif;
   }
+
+
+
+
+  /* dark mode k liye css */
 
 .dark-mode {
     background: #111827;
@@ -31,7 +40,7 @@
     background: #111827;
 }
 
-
+/* marquee k liye css */
 
 .marquee-track {
     display: flex;
@@ -68,8 +77,28 @@
     }
 }
 
+
+/* download button footer k upr uske liye animation  */
+
 .animate-download-scroll {
     animation: downloadScroll 18s linear infinite;
 }
 
 
+
+/* on scroll animation k liye  */
+
+/* Scroll Reveal - initial state */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Jab section viewport mein aaye */
+
+.scroll-reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -7,7 +7,7 @@
             <!-- Logo -->
 
             <a href="/" class="flex items-center">
-                <img src="{{logo}}" alt="DigiKhata" class="w-[180px] h-[54px]">
+                <img src="{{logo}}" alt="DigiKhata" class="w-[150px] h-[46px]">
             </a>
 
 
@@ -38,12 +38,12 @@
                         <!-- Dropdown -->
 
                         <div
-                            class="dropdown-menu hidden absolute left-0 top-full mt-2 w-64 bg-[#416BFA] font-unbounded border border-gray-200 rounded-lg shadow-xl py-2 ">
+                            class="dropdown-menu  hidden absolute left-0 top-full mt-2 w-64 bg-[#416BFA] font-unbounded border border-gray-200 rounded-lg shadow-xl py-2 ">
 
                             {{#each items}}
 
                             <a href="{{link}}" {{#if external}} target="_blank" rel="noopener noreferrer" {{/if}}
-                                class="block px-5 py-3 text-[16px] text-white hover:bg-gray-50 hover:text-blue-600 transition">
+                                class="block font-unbounded px-5 py-3 text-[16px] text-white hover:bg-gray-50 hover:text-blue-600 transition">
                                 {{name}}
                             </a>
 
@@ -101,12 +101,12 @@
 
             <!-- Mobile Hamburger -->
 
-            <button id="mobile-menu-button" type="button" class="lg:hidden flex flex-col gap-1.5 p-2"
+            <button id="mobile-menu-button" type="button" class="lg:hidden flex flex-col gap-1.5"
                 aria-label="Toggle navigation" aria-expanded="false">
 
-                <span class="w-6 h-0.5 bg-gray-800"></span>
-                <span class="w-6 h-0.5 bg-gray-800"></span>
-                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-5 h-0.5 bg-gray-800"></span>
+                <span class="w-5 h-0.5 bg-gray-800"></span>
+                <span class="w-5 h-0.5 bg-gray-800"></span>
 
             </button>
 
@@ -121,21 +121,21 @@
 
                 {{#each navigation}}
 
-                <li class="mobile-nav-item">
+                <li class="mobile-nav-item ">
 
                     {{#if dropdown}}
 
                     <button type="button"
-                        class="mobile-dropdown-toggle w-full flex items-center justify-between py-3 text-left text-gray-700">
+                        class="mobile-dropdown-toggle w-full flex items-center py-3 text-left text-gray-700">
 
-                        <span>{{name}}</span>
+                        <span class="font-unbounded">{{name}}</span>
 
-                        <span>▼</span>
+                        <span class="text-[12px] pl-1">▼</span>
 
                     </button>
 
 
-                    <div class="mobile-dropdown hidden pl-4">
+                    <div class="mobile-dropdown  hidden pl-4">
 
                         {{#each items}}
 
@@ -150,7 +150,7 @@
 
                     {{else}}
 
-                    <a href="{{link}}" class="block py-3 text-gray-700 hover:text-blue-600">
+                    <a href="{{link}}" class="font-unbounded block py-3 text-gray-700 hover:text-blue-600">
                         {{name}}
                     </a>
 
@@ -165,7 +165,7 @@
 
                 <li class="pt-3">
 
-                    <button type="button" class="w-full py-3 rounded-lg bg-blue-600 text-white">
+                    <button type="button" class="w-full p-[10px_26px] text-[14px] rounded-[30px] font-unbounded bg-blue-600 text-white">
                         {{downloadButton.text}}
                     </button>
 
@@ -178,25 +178,21 @@
 
                     <div class="border-t border-gray-200 pt-4">
 
-                        <p class="text-sm font-medium text-gray-700 mb-3">
-                            Accessibility
-                        </p>
-
                         <div class="flex gap-2">
 
-                            <button class="accessibility-btn" data-action="increase">
+                            <button class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]" data-action="increase">
                                 A+
                             </button>
 
-                            <button class="accessibility-btn" data-action="decrease">
+                            <button class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]" data-action="decrease">
                                 A-
                             </button>
 
-                            <button class="accessibility-btn" data-action="reset">
+                            <button class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]" data-action="reset">
                                 Reset
                             </button>
 
-                            <button class="accessibility-btn" data-action="theme">
+                            <button class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]" data-action="theme">
                                 Dark Mode
                             </button>
 
