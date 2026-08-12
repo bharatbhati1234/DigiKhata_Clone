@@ -4,6 +4,7 @@ const siteData = {
 
     logo: "../assets/images/logo.png",
 
+    // Your existing navigation...
     navigation: [
         {
             name: "For Business",
@@ -360,7 +361,7 @@ appStore: {
 footer: {
     columns: [
         {
-            title: "For Individuals",
+            title: "Solutions",
             links: [
                 {
                     name: "Students",
