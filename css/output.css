@@ -54,7 +54,6 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
-    --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --leading-tight: 1.25;
@@ -411,9 +410,6 @@
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
-  .w-\[1\] {
-    width: 1;
-  }
   .w-\[150px\] {
     width: 150px;
   }
@@ -422,9 +418,6 @@
   }
   .w-\[280px\] {
     width: 280px;
-  }
-  .w-\[1140px\] {
-    width: 1140px;
   }
   .w-auto {
     width: auto;
@@ -714,9 +707,6 @@
   .p-\[11px_24px\] {
     padding: 11px 24px;
   }
-  .p-\[11px_30px\] {
-    padding: 11px 30px;
-  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -1005,20 +995,11 @@
     .hover\:border-\[\#0A66C2\]:hover {
       border-color: #0A66C2;
     }
-    .hover\:border-\[\#41\]:hover {
-      border-color: #41;
-    }
     .hover\:border-\[\#416BFA\]:hover {
       border-color: #416BFA;
     }
-    .hover\:border-\[\#416B\]:hover {
-      border-color: #416B;
-    }
     .hover\:border-\[\#1877F2\]:hover {
       border-color: #1877F2;
-    }
-    .hover\:border-\[\#\]:hover {
-      border-color: #;
     }
     .hover\:border-black:hover {
       border-color: var(--color-black);
@@ -1028,9 +1009,6 @@
     }
     .hover\:border-red-600:hover {
       border-color: var(--color-red-600);
-    }
-    .hover\:bg-\[\#\#416BFA\]:hover {
-      background-color: ##416BFA;
     }
     .hover\:bg-\[\#0A66C2\]:hover {
       background-color: #0A66C2;
@@ -1044,12 +1022,6 @@
     .hover\:bg-\[\#1877F2\]:hover {
       background-color: #1877F2;
     }
-    .hover\:bg-\[\#\]:hover {
-      background-color: #;
-    }
-    .hover\:bg-\[416BFA\]:hover {
-      background-color: 416BFA;
-    }
     .hover\:bg-black:hover {
       background-color: var(--color-black);
     }
@@ -1061,9 +1033,6 @@
     }
     .hover\:bg-gray-100:hover {
       background-color: var(--color-gray-100);
-    }
-    .hover\:bg-gray-900:hover {
-      background-color: var(--color-gray-900);
     }
     .hover\:bg-red-600:hover {
       background-color: var(--color-red-600);
@@ -1090,9 +1059,6 @@
     }
     .hover\:text-\[\#416BFA\]:hover {
       color: #416BFA;
-    }
-    .hover\:text-\[\#\]:hover {
-      color: #;
     }
     .hover\:text-blue-600:hover {
       color: var(--color-blue-600);
