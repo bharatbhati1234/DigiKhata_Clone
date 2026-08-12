@@ -195,6 +195,72 @@ async function renderAnnouncement() {
         .insertAdjacentHTML("beforeend", html);
 }
 
+async function renderFAQ() {
+
+    const source = await loadTemplate(
+        "templates/partials/faq.hbs"
+    );
+
+    const template = Handlebars.compile(source);
+
+    const html = template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+    // FAQ HTML render hone ke baad
+    initFAQ();
+}
+
+// faq(accordion) k liye logic 
+
+
+function initFAQ() {
+
+    const questions = document.querySelectorAll(".faq-question");
+
+    questions.forEach((question) => {
+
+        question.addEventListener("click", () => {
+
+            const answer = question.nextElementSibling;
+            const icon = question.querySelector(".faq-icon");
+
+            // Close all other FAQs
+            document.querySelectorAll(".faq-answer").forEach((item) => {
+                if (item !== answer) {
+                    item.classList.add("hidden");
+                }
+            });
+
+            document.querySelectorAll(".faq-icon").forEach((item) => {
+                if (item !== icon) {
+                    item.textContent = "+";
+                    item.classList.remove("rotate-45");
+                }
+            });
+
+            // Toggle current FAQ
+            answer.classList.toggle("hidden");
+
+            if (answer.classList.contains("hidden")) {
+                icon.textContent = "+";
+                icon.classList.remove("rotate-45");
+            } else {
+                icon.textContent = "×";
+                icon.classList.add("rotate-45");
+            }
+
+        });
+
+    });
+
+}
+
 
 async function renderAppStore() {
     const source = await loadTemplate(
@@ -280,6 +346,8 @@ async function initApp() {
     await renderKiosk();
 
     await renderAnnouncement();
+
+    await renderFAQ();
 
     await renderAppStore();
 
