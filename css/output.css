@@ -385,6 +385,9 @@
   .h-\[72px\] {
     height: 72px;
   }
+  .h-\[1100px\] {
+    height: 1100px;
+  }
   .h-auto {
     height: auto;
   }
@@ -914,6 +917,10 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .tracking-\[3px\] {
+    --tw-tracking: 3px;
+    letter-spacing: 3px;
+  }
   .whitespace-nowrap {
     white-space: nowrap;
   }
@@ -955,6 +962,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
   .opacity-0 {
     opacity: 0%;
@@ -1371,6 +1381,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -1512,6 +1526,7 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;

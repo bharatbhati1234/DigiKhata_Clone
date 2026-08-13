@@ -79,7 +79,7 @@ function initHeroCarousel() {
         dots.forEach((dot) => {
 
             dot.classList.remove(
-                "bg-blue-600",
+                "bg-[#416BFA]",
                 "w-8"
             );
 
@@ -101,7 +101,7 @@ function initHeroCarousel() {
             );
 
             dots[currentSlide].classList.add(
-                "bg-blue-600",
+                "bg-[#416BFA]",
                 "w-8"
             );
 
