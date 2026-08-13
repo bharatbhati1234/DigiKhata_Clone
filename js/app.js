@@ -195,6 +195,22 @@ async function renderAnnouncement() {
         .insertAdjacentHTML("beforeend", html);
 }
 
+
+
+async function renderdownloadapp() {
+    const source = await loadTemplate(
+        "templates/partials/download-app.hbs"
+    );
+
+    const template = Handlebars.compile(source);
+
+    const html = template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML("beforeend", html);
+}
+
 async function renderFAQ() {
 
     const source = await loadTemplate(
@@ -346,6 +362,8 @@ async function initApp() {
     await renderKiosk();
 
     await renderAnnouncement();
+
+    await renderdownloadapp();
 
     await renderFAQ();
 

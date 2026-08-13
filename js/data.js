@@ -357,6 +357,26 @@ appStore: {
     alt: "Download on the App Store"
 },
 
+downloadapp:{
+    link: "https://apps.apple.com/in/app/digi-khata/id1194920306",
+    image: "assets/images/apple-store.png",
+    alt: "Download on the App Store",
+    heading:"One app for all your financial needs",
+    paragraph:"Download our mobile application now and discover the power of accessing all your payments needs in one place.",
+    button:{
+         buttonText: "Learn more",
+
+         buttonLink: "/for-business/digi-kiosk",
+
+         image: "assets/images/DigiKhataShopBoard.jpg",
+
+         imageAlt: "Become a Digi Kiosk"
+
+    }
+
+},
+
+
 
 footer: {
     columns: [
