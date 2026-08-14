@@ -384,6 +384,10 @@ footer: {
             title: "Solutions",
             links: [
                 {
+                    name: "Professionals",
+                    url: "/for-business/professionals"
+                },
+                {
                     name: "Students",
                     url: "/for-business/students"
                 },
