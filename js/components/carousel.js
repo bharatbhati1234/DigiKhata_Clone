@@ -161,6 +161,6 @@ function initHeroCarousel() {
 
         showSlide(currentSlide + 1);
 
-    }, 5000);
+    }, 4000);
 
 }

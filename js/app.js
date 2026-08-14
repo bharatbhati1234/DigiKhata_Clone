@@ -398,6 +398,7 @@ function initDownloadModal() {
         modal.classList.add("hidden");
 
         document.body.classList.remove("overflow-hidden");
+        
 
     });
 
