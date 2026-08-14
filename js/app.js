@@ -340,12 +340,90 @@ function initScrollReveal() {
     });
 }
 
+// Modal for Download button which is in Navbar ko render kiya h ---------------------------------------
+
+async function renderDownloadModal() {
+
+    const source = await loadTemplate(
+        "templates/partials/download-modal.hbs"
+    );
+
+    const template = Handlebars.compile(source);
+
+    const html = template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+    initDownloadModal();
+}
+
+
+// logic for Modal ------------------------------------------------------------
+
+function initDownloadModal() {
+
+    const downloadButton =
+        document.getElementById("download-app");
+
+    const modal =
+        document.getElementById("download-modal");
+
+    const closeButton =
+        document.getElementById("close-download-modal");
+
+
+    if (!downloadButton || !modal || !closeButton) {
+        return;
+    }
+
+
+    // Open Modal
+    downloadButton.addEventListener("click", () => {
+
+        modal.classList.remove("hidden");
+
+        document.body.classList.add("overflow-hidden");
+
+    });
+
+
+    // Close Modal
+    closeButton.addEventListener("click", () => {
+
+        modal.classList.add("hidden");
+
+        document.body.classList.remove("overflow-hidden");
+
+    });
+
+
+    // Close when clicking outside modal
+    modal.addEventListener("click", (event) => {
+
+        if (event.target === modal) {
+
+            modal.classList.add("hidden");
+
+            document.body.classList.remove("overflow-hidden");
+
+        }
+
+    });
+
+}
 
 
 
 async function initApp() {
 
     await renderNavbar();
+
+    await renderDownloadModal();
 
     await renderHero();
 
@@ -370,6 +448,7 @@ async function initApp() {
     await renderAppStore();
 
     await renderFooter();
+
 
         initScrollReveal();
 

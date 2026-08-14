@@ -1,0 +1,80 @@
+<!-- Download App Modal -->
+<div
+    id="download-modal"
+    class="hidden fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 px-4"
+>
+
+    <!-- Modal Box -->
+    <div
+        class="relative w-full max-w-[748px] bg-white rounded-[5px] shadow-2xl"
+    >
+
+        <!-- Close Button -->
+        <button
+            id="close-download-modal"
+            type="button"
+            class="absolute top-[-12px] right-[-12px] bg-[#416BFA] rounded-[50px] z-10 w-9 h-9 flex items-center justify-center cursor-pointer"
+            aria-label="Close"
+        >
+            <img
+                src="assets/images/close_icon.svg"
+                alt="Close"
+                class="w-5 h-5 brightness-0 invert"
+            >
+        </button>
+
+
+        <!-- Modal Body -->
+        <div class="px-5 py-10 md:px-10 md:py-12">
+
+            <!-- Heading -->
+            <div class="text-center mb-10">
+
+                <h2
+                    class="text-[32px] md:text-[40px] font-[700] leading-tight text-black"
+                >
+                    Download Our App
+                </h2>
+
+            </div>
+
+
+            <!-- App Store Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-10">
+
+                <!-- Google Play -->
+                <a
+                    href="https://play.google.com/store/apps/details?id=com.paypointz.wallet&pcampaignid=web_share"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center bg-white p-[6px_30px] border border-black  rounded-[50px] border-r-4 border-b-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                >
+                    <img
+                        src="assets/images/google-play.png"
+                        alt="Get it on Google Play"
+                        class="h-10 md:h-12 w-auto object-contain"
+                    >
+                </a>
+
+
+                <!-- Apple Store -->
+                <a
+                    href="https://apps.apple.com/in/app/digi-khata/id1194920306"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center bg-white p-[6px_30px] rounded-[50px] border border-black border-r-4 border-b-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                >
+                    <img
+                        src="assets/images/apple-store.png"
+                        alt="Download on the App Store"
+                        class="h-10 md:h-12 w-auto object-contain"
+                    >
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
