@@ -237,38 +237,71 @@ async function renderFAQ() {
 
 function initFAQ() {
 
-    const questions = document.querySelectorAll(".faq-question");
+    const questions =
+        document.querySelectorAll(".faq-question");
 
     questions.forEach((question) => {
 
         question.addEventListener("click", () => {
 
-            const answer = question.nextElementSibling;
-            const icon = question.querySelector(".faq-icon");
+            const answer =
+                question.nextElementSibling;
 
-            // Close all other FAQs
-            document.querySelectorAll(".faq-answer").forEach((item) => {
-                if (item !== answer) {
+            const icon =
+                question.querySelector(".faq-icon");
+
+            const title =
+                question.querySelector(".faq-title");
+
+            const faqIcon =
+                question.querySelector(".fa-question");
+
+
+            const isOpen =
+                !answer.classList.contains("hidden");
+
+
+            // Close all FAQs
+            document.querySelectorAll(".faq-answer")
+                .forEach((item) => {
                     item.classList.add("hidden");
-                }
-            });
+                });
 
-            document.querySelectorAll(".faq-icon").forEach((item) => {
-                if (item !== icon) {
+            document.querySelectorAll(".faq-icon")
+                .forEach((item) => {
                     item.textContent = "+";
-                    item.classList.remove("rotate-45");
-                }
-            });
+                });
 
-            // Toggle current FAQ
-            answer.classList.toggle("hidden");
+            document.querySelectorAll(".faq-title")
+                .forEach((item) => {
+                    item.classList.remove("text-[#416BFA]");
+                });
 
-            if (answer.classList.contains("hidden")) {
-                icon.textContent = "+";
-                icon.classList.remove("rotate-45");
-            } else {
-                icon.textContent = "×";
-                icon.classList.add("rotate-45");
+            document.querySelectorAll(".fa-question")
+                .forEach((item) => {
+                    item.classList.remove(
+                        "text-white",
+                        "bg-[#416BFA]"
+                    );
+                });
+
+
+            // Open clicked FAQ
+            if (!isOpen) {
+
+                answer.classList.remove("hidden");
+
+                icon.textContent = "−";
+
+                title.classList.add(
+                    "text-[#416BFA]"
+                );
+
+                faqIcon.classList.add(
+                    "text-white",
+                    "bg-[#416BFA]"
+                );
+
             }
 
         });
@@ -370,47 +403,128 @@ function initDownloadModal() {
     const downloadButton =
         document.getElementById("download-app");
 
+    const mobileDownloadButton =
+        document.getElementById("download-app-mobile");
+
     const modal =
         document.getElementById("download-modal");
+
+    const modalContent =
+        document.getElementById("download-modal-content");
 
     const closeButton =
         document.getElementById("close-download-modal");
 
 
-    if (!downloadButton || !modal || !closeButton) {
+    if (!modal || !closeButton) {
         return;
     }
 
 
-    // Open Modal
-    downloadButton.addEventListener("click", () => {
+    // =========================
+    // OPEN MODAL
+    // =========================
+
+    function openModal() {
 
         modal.classList.remove("hidden");
 
         document.body.classList.add("overflow-hidden");
 
-    });
+        setTimeout(() => {
+
+            if (modalContent) {
+
+                modalContent.classList.remove(
+                    "-translate-y-20",
+                    "opacity-0"
+                );
+
+                modalContent.classList.add(
+                    "translate-y-0",
+                    "opacity-100"
+                );
+
+            }
+
+        }, 10);
+
+    }
 
 
-    // Close Modal
-    closeButton.addEventListener("click", () => {
+    // =========================
+    // DESKTOP DOWNLOAD
+    // =========================
 
-        modal.classList.add("hidden");
+    if (downloadButton) {
 
-        document.body.classList.remove("overflow-hidden");
-        
+        downloadButton.addEventListener(
+            "click",
+            openModal
+        );
 
-    });
+    }
 
 
-    // Close when clicking outside modal
+    // =========================
+    // MOBILE DOWNLOAD
+    // =========================
+
+    if (mobileDownloadButton) {
+
+        mobileDownloadButton.addEventListener(
+            "click",
+            openModal
+        );
+
+    }
+
+
+    // =========================
+    // CLOSE MODAL
+    // =========================
+
+    function closeModal() {
+
+        if (modalContent) {
+
+            modalContent.classList.remove(
+                "translate-y-0",
+                "opacity-100"
+            );
+
+            modalContent.classList.add(
+                "-translate-y-20",
+                "opacity-0"
+            );
+
+        }
+
+        setTimeout(() => {
+
+            modal.classList.add("hidden");
+
+            document.body.classList.remove(
+                "overflow-hidden"
+            );
+
+        }, 500);
+
+    }
+
+
+    closeButton.addEventListener(
+        "click",
+        closeModal
+    );
+
+
+    // Click outside
     modal.addEventListener("click", (event) => {
 
         if (event.target === modal) {
 
-            modal.classList.add("hidden");
-
-            document.body.classList.remove("overflow-hidden");
+            closeModal();
 
         }
 
@@ -420,43 +534,175 @@ function initDownloadModal() {
 
 
 
-async function initApp() {
 
-    await renderNavbar();
+// -------------------------------- For Business menu k under k pages ---------------------------------------------------------------
 
-    await renderDownloadModal();
-
-    await renderHero();
-
-    await renderMarquee();
-
-    await renderFeatures();
-
-    await renderFeatureTabs();
-
-    await renderServices();
-
-    await renderHowItWorks();
-
-    await renderKiosk();
-
-    await renderAnnouncement();
-
-    await renderdownloadapp();
-
-    await renderFAQ();
-
-    await renderAppStore();
-
-    await renderFooter();
+// Navbar k under for business menu k under digi kiosk page hai uska section hai -------------------------
 
 
-        initScrollReveal();
+async function renderDigiKioskHero() {
 
+    const source = await loadTemplate(
+        "templates/partials/digi-kiosk-hero.hbs"
+    );
 
+    const template =
+        Handlebars.compile(source);
 
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
 
 }
 
+
+async function renderDigiKioskBenefits() {
+
+    const source = await loadTemplate(
+        "templates/partials/digi-kiosk-benefits.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+async function renderDigiKioskServices() {
+
+    const source = await loadTemplate(
+        "templates/partials/digi-kiosk-services.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+async function renderDigiKioskSecurity() {
+
+    const source = await loadTemplate(
+        "templates/partials/digi-kiosk-security.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+async function renderDigiKioskCta() {
+
+    const source = await loadTemplate(
+        "templates/partials/digi-kiosk-cta.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+async function initApp() {
+
+    await renderNavbar();                  //  ye sab pages me esliye eder rakha hai 
+    await renderDownloadModal();           // ye sab pages me esliye eder rakha hai 
+
+    const path = window.location.pathname;
+
+    // Home page
+    if (
+        path === "/" ||
+        path.endsWith("index.html")
+    ) {
+
+        await renderHero();
+        await renderMarquee();
+        await renderFeatures();
+        await renderFeatureTabs();
+        await renderServices();
+        await renderHowItWorks();
+        await renderKiosk();
+        await renderAnnouncement();
+        await renderdownloadapp();
+        await renderFAQ();
+
+    }
+
+    // for Business menu k ander:-  Digi Kiosk page
+
+    else if (path.endsWith("digi-kiosk.html")) {
+
+        await renderDigiKioskHero();
+
+        await renderDigiKioskBenefits();
+
+        await renderDigiKioskServices();
+
+
+        await renderDigiKioskSecurity();
+
+
+        await renderDigiKioskCta();     
+
+
+
+    }
+
+    await renderAppStore();       // ye sab pages me hai esliye eder rakha hai 
+
+    await renderFooter();       //  ye sab pages me hai esliye eder rakha hai 
+
+    initScrollReveal();
+}
 
 initApp();

@@ -6,8 +6,10 @@
 
     <!-- Modal Box -->
     <div
-        class="relative w-full max-w-[748px] bg-white rounded-[5px] shadow-2xl"
-    >
+    id="download-modal-content"
+    class="relative w-full max-w-[748px] bg-white rounded-[5px] shadow-2xl
+           -translate-y-20 opacity-0 transition-all duration-500 ease-out"
+      >
 
         <!-- Close Button -->
         <button
@@ -17,8 +19,8 @@
             aria-label="Close"
         >
             <img
-                src="assets/images/close_icon.svg"
-                alt="Close"
+                src="{{downloadModal.closeIcon}}"
+                alt="{{downloadModal.closeAlt}}"
                 class="w-5 h-5 brightness-0 invert"
             >
         </button>
@@ -33,7 +35,7 @@
                 <h2
                     class="text-[32px] md:text-[40px] font-[700] leading-tight text-black"
                 >
-                    Download Our App
+                    {{downloadModal.title}}
                 </h2>
 
             </div>
@@ -44,14 +46,14 @@
 
                 <!-- Google Play -->
                 <a
-                    href="https://play.google.com/store/apps/details?id=com.paypointz.wallet&pcampaignid=web_share"
+                    href="{{downloadModal.googlePlay.link}}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center justify-center bg-white p-[6px_30px] border border-black  rounded-[50px] border-r-4 border-b-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                    class="inline-flex items-center justify-center bg-white p-[6px_30px] border border-black rounded-[50px] border-r-4 border-b-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
                     <img
-                        src="assets/images/google-play.png"
-                        alt="Get it on Google Play"
+                        src="{{downloadModal.googlePlay.image}}"
+                        alt="{{downloadModal.googlePlay.alt}}"
                         class="h-10 md:h-12 w-auto object-contain"
                     >
                 </a>
@@ -59,14 +61,14 @@
 
                 <!-- Apple Store -->
                 <a
-                    href="https://apps.apple.com/in/app/digi-khata/id1194920306"
+                    href="{{downloadModal.appleStore.link}}"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="inline-flex items-center justify-center bg-white p-[6px_30px] rounded-[50px] border border-black border-r-4 border-b-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
                     <img
-                        src="assets/images/apple-store.png"
-                        alt="Download on the App Store"
+                        src="{{downloadModal.appleStore.image}}"
+                        alt="{{downloadModal.appleStore.alt}}"
                         class="h-10 md:h-12 w-auto object-contain"
                     >
                 </a>

@@ -12,7 +12,7 @@ const siteData = {
             items: [
                 {
                     name: "Digi Kiosk",
-                    link: "/for-business/digi-kiosk"
+                    link: "/digi-kiosk.html"
                 },
                 {
                     name: "Digi Vyapaar",
@@ -94,6 +94,28 @@ const siteData = {
     downloadButton: {
         text: "Download Our App"
     },
+
+
+
+
+    downloadModal: {
+    title: "Download Our App",
+
+    closeIcon: "assets/images/close_icon.svg",
+    closeAlt: "Close",
+
+    googlePlay: {
+        link: "https://play.google.com/store/apps/details?id=com.paypointz.wallet&pcampaignid=web_share",
+        image: "assets/images/google-play.png",
+        alt: "Get it on Google Play"
+    },
+
+    appleStore: {
+        link: "https://apps.apple.com/in/app/digi-khata/id1194920306",
+        image: "assets/images/apple-store.png",
+        alt: "Download on the App Store"
+    }
+},
 
 
     // =========================
@@ -266,39 +288,39 @@ featuresSection: {
 
 
 
-    services: [
+    servicesSection: {
+    label: "Services",
+    title: "Financial services for your needs",
+    description:
+        "Experience unparalleled financial services and offerings thoughtfully designed to meet your diverse needs."
+    },
 
-        {
-            title: "Financial",
-            image: "assets/images/financial.png"
-        },
-
-        {
-            title: "Booking",
-            image: "assets/images/booking.png"
-        },
-
-        {
-            title: "Recharges",
-            image: "assets/images/recharges.png"
-        },
-
-        {
-            title: "Payments",
-            image: "assets/images/bill.png"
-        },
-
-        {
-            title: "Insurance",
-            image: "assets/images/insuarance.png"
-        },
-
-        {
-            title: "Loans",
-            image: "assets/images/loans.png"
-        }
-
-    ],
+services: [
+    {
+        title: "Mobile Recharge",
+        image: "assets/images/financial.png"
+    },
+    {
+        title: "Bill Payment",
+        image: "assets/images/booking.png"
+    },
+    {
+        title: "Money Transfer",
+        image: "assets/images/recharges.png"
+    },
+    {
+        title: "Digi Khata Card",
+        image: "assets/images/bill.png"
+    },
+    {
+        title: "Insurance",
+        image: "assets/images/insuarance.png"
+    },
+    {
+        title: "Digi Kiosk",
+        image: "assets/images/loans.png"
+    }
+],
 
 
     howItWorks: {
@@ -351,30 +373,120 @@ kioskSection: {
 
 announcement: "Enabled for all types of transactions",
 
-appStore: {
-    link: "https://apps.apple.com/in/app/digi-khata/id1194920306",
-    image: "assets/images/apple-store.png",
-    alt: "Download on the App Store"
+
+
+section11: {
+    title: "One app for all your financial needs",
+
+    description:
+        "Download our mobile application now and discover the power of accessing all your payments needs in one place.",
+
+    image: "assets/images/download_the_application.png",
+
+    imageAlt: "Download the Digi Khata application",
+
+    googlePlay: {
+        link: "https://play.google.com/store/apps/details?id=com.paypointz.wallet&pcampaignid=web_share",
+        image: "assets/images/google-play.png",
+        alt: "Get it on Google Play"
+    },
+
+    appleStore: {
+        link: "https://apps.apple.com/in/app/digi-khata/id1194920306",
+        image: "assets/images/apple-store.png",
+        alt: "Download on the App Store"
+    }
 },
 
-downloadapp:{
-    link: "https://apps.apple.com/in/app/digi-khata/id1194920306",
-    image: "assets/images/apple-store.png",
-    alt: "Download on the App Store",
-    heading:"One app for all your financial needs",
-    paragraph:"Download our mobile application now and discover the power of accessing all your payments needs in one place.",
-    button:{
-         buttonText: "Learn more",
 
-         buttonLink: "/for-business/digi-kiosk",
+faq: [
 
-         image: "assets/images/DigiKhataShopBoard.jpg",
+    {
+        question: "What is Digi Khata, and how does it function?",
 
-         imageAlt: "Become a Digi Kiosk"
+        answer:
+            "Digi Khata is a revolutionary digital financial platform that simplifies your financial operations. It offers various financial services, such as easy fund transfers, bill payments, recharges, and many more, all under one roof. Digi Khata provides the convenience of managing your finances anytime, anywhere."
+    },
 
+    {
+        question:
+            "What is the process for setting up a Digi Khata pre-paid account?",
+
+        answer:
+            "Applying for a Digi Khata pre-paid account is straightforward. You can easily open a Digi Khata pre-paid account by downloading the mobile application or visiting the nearest Digi Khata kiosk branch. You will need to complete the KYC process to unlock the full potential of Digi Khata."
+    },
+
+    {
+        question:
+            "How do I sign up to create my new pre-paid Digi Khata account?",
+
+        answerBefore:
+            "To sign up and create your new pre-paid account with Digi Khata, download the Digi Khata app from",
+
+        link: "https://digikhata.in/",
+        linkText: "Digi Khata",
+
+        answerAfter:
+            ", install it on your device, follow the on-screen instructions, and complete the registration process."
+    },
+
+    {
+        question: "What types of support do you provide?",
+
+        answer:
+            "We provide best-in-class support and training to help you manage and grow your business. Our regional team, with offices across India, is dedicated to assisting you with any questions or issues."
     }
 
-},
+],
+
+//  social icons of home page ---------------------------------------
+
+    socialLinks: [
+        {
+            name: "Facebook",
+            url: "https://www.facebook.com/digikhataindia",
+            icon: "fa-facebook",
+            hover: "hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2]"
+        },
+        {
+            name: "Instagram",
+            url: "https://www.instagram.com/digikhataindia/",
+            icon: "fa-instagram",
+            hover: "hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 hover:text-white hover:border-pink-500"
+        },
+        {
+            name: "YouTube",
+            url: "https://www.youtube.com/channel/UCTexVAiymsW5z0uonAtBaVQ",
+            icon: "fa-youtube-play",
+            hover: "hover:bg-red-600 hover:text-white hover:border-red-600"
+        },
+        {
+            name: "X",
+            url: "https://x.com/digikhataindia",
+            icon: "fa-twitter",
+            hover: "hover:bg-black hover:text-white hover:border-black"
+        },
+        {
+            name: "LinkedIn",
+            url: "https://www.linkedin.com/company/digikhataindia",
+            icon: "fa-linkedin",
+            hover: "hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2]"
+        }
+    ],
+
+    accountSection: {
+        title: "Get Your Pre-paid Digital Account",
+        description: "Create your free pre-paid digital account and experience the ease and convenience of managing your finances."
+    },
+
+    downloadSlider: {
+        text: "Download Our App",
+        repeatCount: 8
+    },
+
+
+
+
 
 
 
@@ -418,7 +530,7 @@ footer: {
 
         {
             title: "Company",
-            links: [
+            links: [    
                 {
                     name: "About",
                     url: "/about"
@@ -483,9 +595,221 @@ footer: {
 
     copyright:
         "Copyright © 2026 Pay Point India Private Limited. All rights reserved."
-}
+},
+
+
+
+
+
+
+// Navbar k under For Business menu k under Digi kiosk page k sections
+
+
+  digiKioskHero: {
+        label: "For Shop Owners",
+
+        title: "Transform Your Store into a Digi Kiosk.",
+
+        description:
+            "Turn your outlet into a digital finance hub with Digi Khata’s kiosk solutions. Start today!",
+
+        image: "assets/images/for-business.png",
+
+        imageAlt: "Digi Kiosk",
+
+        subTitle: "Digi Kiosk Self Service",
+
+        subDescription:
+            "Open Digi Khata accounts and provide pre-paid wallet/card fully interoperable through UPI/Rupay to your customers."
+    },
+
+
+
+
+
+ digiKioskBenefits: {
+
+    heading: "Benefits",
+
+    title: "Lowest charges, attractive commission at your landmark store in your neighborhood",
+
+    items: [
+
+        {
+            image: "assets/images//Gramins1.png",
+            imageAlt: "Digi Kiosk benefits",
+            imageLeft: false,
+
+            benefits: [
+                {
+                    title: "Instant PPI Wallet Offering",
+                    description:
+                        "Open Digi Khata PPI wallet for your customers and start offering interoperable UPI to your customers instantly."
+                },
+
+                {
+                    title: "Easy KYC",
+                    description:
+                        "100% digital and effortless KYC with absolutely no paper-work. Open full KYC PPI wallet with only AADHAAR & PAN Card."
+                },
+
+                {
+                    title: "Instant Interoperable UPI handle",
+                    description:
+                        "Customers can download the app as soon as the PPI wallet is opened and start sending and receiving money via their UPI and QR code."
+                }
+            ]
+        },
+
+
+        {
+            image: "assets/images//Gramins2.png",
+            imageAlt: "Rupay Pre-paid Card",
+            imageLeft: true,
+
+            benefits: [
+                {
+                    title: "Rupay Pre-paid Card",
+                    description:
+                        "PPI Wallets are opened with a free virtual card. Customers can also request a physical card to swipe/tap offline."
+                }
+            ]
+        },
+
+
+        {
+            image: "assets/images//Gramins1.png",
+            imageAlt: "Digi Kiosk services",
+            imageLeft: false,
+
+            benefits: [
+                {
+                    title: "100+ other services",
+                    description:
+                        "Offer 100s of other services like recharge, bill payments, travel bookings, insurance and many more from your Digi Kiosk."
+                },
+
+                {
+                    title: "Attractive Commission / Lowest fee",
+                    description:
+                        "Digi Khata offers industry leading commission with the lowest possible margins to maximise your earning potential and ROI of your store."
+                }
+            ]
+        }
+
+    ]
+},
+
+
+
+digiKioskServices: {
+    heading: "What you can do",
+
+    title: "Become a hub for a suite of financial services",
+
+    leftServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            description:
+                "Sell a wide range of services to your customers like Instant PPI Wallet opening, interoperable UPI, Rupay card and much more…"
+        },
+
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "Pre-paid card services",
+            description:
+                "Provide customers ease of payment solution by providing pre-paid cards."
+        }
+    ],
+
+    rightServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            description:
+                "Ensure smooth PPI Wallet offerings by verifying KYC."
+        }
+    ],
+
+    bottomText:
+        "... And let your customers enjoy the convenience of digital payments"
+},
+
+
+
+
+ digiKioskSecurity: {
+
+    heading: "What you can do",
+
+    title: "Keeping your money safe is our priority",
+
+    items: [
+
+        {
+            image: "assets/images/secure.png",
+            imageAlt: "RBI Compliant PPI Wallet",
+            title: "RBI Compliant PPI Wallet",
+            description: "Under PSSA Act, 2007"
+        },
+
+        {
+            image: "assets/images/secure.png",
+            imageAlt: "100% Bharatiya",
+            title: "100% Bharatiya",
+            description:
+                "100% Swadeshi DNA. Founded, funded and run by Indians"
+        },
+
+        {
+            image: "assets/images/secure.png",
+            imageAlt: "Inclusive",
+            title: "Inclusive",
+            description:
+                "For everyone from rural to urban India"
+        }
+
+    ]
+},
+
+
+
+
+digikioskCta: {
+    title: "One app for all your financial needs",
+
+    description:
+        "Download our mobile application now and discover the power of accessing all your payments needs in one place.",
+
+    image: "assets/images/download_the_application.png",
+
+    imageAlt: "Download the Digi Khata application",
+
+    googlePlay: {
+        link: "https://play.google.com/store/apps/details?id=com.paypointz.wallet&pcampaignid=web_share",
+        image: "assets/images/google-play.png",
+        alt: "Get it on Google Play"
+    },
+
+    appleStore: {
+        link: "https://apps.apple.com/in/app/digi-khata/id1194920306",
+        image: "assets/images/apple-store.png",
+        alt: "Download on the App Store"
+    }
+},
+
+
+
+
+
+
+
+
+
 
 };
+
 
 
 

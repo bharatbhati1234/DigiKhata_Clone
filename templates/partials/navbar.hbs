@@ -1,4 +1,4 @@
-<header id="site-header" class="sticky top-0 z-50 w-full bg-white border-none">
+<header id="site-header" class="sticky top-0 z-50 w-full bg-white border-none ">
 
     <nav class="max-w-7xl mx-auto px-5 ">
 
@@ -53,7 +53,8 @@
 
                         {{else}}
 
-                        <a href="{{link}}" class="font-unbounded nav-link py-3 text-[16px] text-black hover:text-[#416BFA] transition">
+                        <a href="{{link}}"
+                            class="font-unbounded nav-link py-3 text-[16px] text-black hover:text-[#416BFA] transition">
                             {{name}}
                         </a>
 
@@ -76,21 +77,30 @@
 
                 <!-- Accessibility -->
 
-                <div class="flex items-center gap-1 bg-[#141414A6] p-[8px] rounded-[30px] shadow-[0_8px_25px_rgba(0,0,0,0.25)]" id="desktop-accessibility">
+                <div class="flex items-center gap-1 bg-[#141414A6] p-[8px] rounded-[30px] shadow-[0_8px_25px_rgba(0,0,0,0.25)]"
+                    id="desktop-accessibility">
 
-                    <button type="button" class="accessibility-btn text-[14px] font-[600] p-[8px_12px] text-white border border-white/15 rounded-[50px] transition-all hover:bg-[#416BFA] hover:border-[#416BFA] hover:-translate-y-0.5" data-action="increase" title="Increase Font Size">
+                    <button type="button"
+                        class="accessibility-btn text-[14px] font-[600] p-[8px_12px] text-white border border-white/15 rounded-[50px] transition-all hover:bg-[#416BFA] hover:border-[#416BFA] hover:-translate-y-0.5"
+                        data-action="increase" title="Increase Font Size">
                         A+
                     </button>
 
-                    <button type="button" class="accessibility-btn text-[14px] font-[600] p-[8px_12px] text-white border border-white/15 rounded-[50px] transition-all hover:bg-[#416BFA] hover:border-[#416BFA] hover:-translate-y-0.5" data-action="decrease" title="Decrease Font Size">
+                    <button type="button"
+                        class="accessibility-btn text-[14px] font-[600] p-[8px_12px] text-white border border-white/15 rounded-[50px] transition-all hover:bg-[#416BFA] hover:border-[#416BFA] hover:-translate-y-0.5"
+                        data-action="decrease" title="Decrease Font Size">
                         A-
                     </button>
 
-                    <button type="button" class="accessibility-btn text-[14px] font-[600] p-[8px_12px] text-white border border-white/15 rounded-[50px] transition-all hover:bg-[#416BFA] hover:border-[#416BFA] hover:-translate-y-0.5" data-action="reset" title="Reset">
+                    <button type="button"
+                        class="accessibility-btn text-[14px] font-[600] p-[8px_12px] text-white border border-white/15 rounded-[50px] transition-all hover:bg-[#416BFA] hover:border-[#416BFA] hover:-translate-y-0.5"
+                        data-action="reset" title="Reset">
                         Reset
                     </button>
 
-                    <button type="button" class="accessibility-btn p-[8px_12px] border border-white/15 rounded-[50px] transition-all hover:bg-[#416BFA] hover:border-[#416BFA] hover:-translate-y-0.5" data-action="theme" title="Toggle Dark Mode">
+                    <button type="button"
+                        class="accessibility-btn p-[8px_12px] border border-white/15 rounded-[50px] transition-all hover:bg-[#416BFA] hover:border-[#416BFA] hover:-translate-y-0.5"
+                        data-action="theme" title="Toggle Dark Mode">
                         🌓
                     </button>
 
@@ -165,7 +175,8 @@
 
                 <li class="pt-3">
 
-                    <button type="button" class="w-full p-[10px_26px] text-[14px] rounded-[30px] font-unbounded bg-blue-600 text-white">
+                    <button id="download-app-mobile" type="button"
+                        class="w-full p-[10px_26px] text-[14px] rounded-[30px] font-unbounded bg-blue-600 text-white">
                         {{downloadButton.text}}
                     </button>
 
@@ -180,19 +191,27 @@
 
                         <div class="flex gap-2">
 
-                            <button class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]" data-action="increase">
+                            <button
+                                class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]"
+                                data-action="increase">
                                 A+
                             </button>
 
-                            <button class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]" data-action="decrease">
+                            <button
+                                class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]"
+                                data-action="decrease">
                                 A-
                             </button>
 
-                            <button class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]" data-action="reset">
+                            <button
+                                class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]"
+                                data-action="reset">
                                 Reset
                             </button>
 
-                            <button class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]" data-action="theme">
+                            <button
+                                class="accessibility-btn p-[8px_10px] border-2 border-[#ddd] rounded-[5px] text-[16px] bg-[#f5f5f5]"
+                                data-action="theme">
                                 Dark Mode
                             </button>
 

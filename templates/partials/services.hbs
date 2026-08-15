@@ -7,7 +7,7 @@
         <div class="text-center max-w-3xl mx-auto mb-12">
 
             <h5 class="text-[20px] font-medium text-[#416BFA] mb-3">
-                Services
+                {{servicesSection.label}}
             </h5>
 
             <h2
@@ -20,7 +20,7 @@
                     text-gray-900
                 "
             >
-                Financial services for your needs
+                {{servicesSection.title}}
             </h2>
 
             <p
@@ -32,8 +32,7 @@
                     text-gray-600
                 "
             >
-                Experience unparalleled financial services and offerings
-                thoughtfully designed to meet your diverse needs.
+                {{servicesSection.description}}
             </p>
 
         </div>
@@ -71,9 +70,8 @@
                             text-center
                             group
                             cursor-pointer
-                            
+
                             transition-all duration-300 ease-linear hover:shadow-[0px_0px_8px_rgba(65,107,250,0.81)]
-                            
                         "
                     >
 
@@ -84,7 +82,6 @@
                                 text-gray-800
                                 mb-4
                                 transition-colors
-                                
                             "
                         >
                             {{title}}

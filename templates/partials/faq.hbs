@@ -1,134 +1,73 @@
 <section class="w-full py-16 block scroll-reveal" id="Section12">
+
     <div class="max-w-5xl mx-auto px-5">
 
         <div id="accordioncontent" class="space-y-4">
 
-            <!-- FAQ 1 -->
+            {{#each faq}}
+
             <div class="group border border-gray-200 rounded-xl overflow-hidden">
 
                 <button
                     type="button"
                     class="faq-question w-full flex items-center justify-between gap-4 px-6 py-5 text-left font-medium text-gray-800 hover:bg-gray-50 transition"
                 >
-                    <span class="flex items-center gap-3 text-[18px] font-[600]  group-hover:text-[#416BFA] transition-colors duration-200 cursor-pointer">
-                        <i class="fa fa-question rounded-[50px] text-[black] group-hover:text-[white] group-hover:bg-[#416BFA] p-[10px_15px] rounded-[50px]"></i>
-                        What is Digi Khata, and how does it function?
+
+                    <span
+                        class="faq-title flex items-center gap-3 text-[18px] font-[600] group-hover:text-[#416BFA] transition-colors duration-200 cursor-pointer"
+                    >
+
+                        <i
+                            class="fa fa-question rounded-[50px] text-[black] group-hover:text-[white] group-hover:bg-[#416BFA] p-[10px_15px]"
+                        ></i>
+
+                        {{question}}
+
                     </span>
 
-                    <span class="faq-icon text-xl transition-transform duration-300">
+                    <span
+                        class="faq-icon text-xl transition-transform duration-300"
+                    >
                         +
                     </span>
+
                 </button>
 
+
                 <div class="faq-answer hidden px-6 pb-5">
+
                     <p class="text-gray-600 leading-7">
-                        Digi Khata is a revolutionary digital financial platform
-                        that simplifies your financial operations. It offers
-                        various financial services, such as easy fund transfers,
-                        bill payments, recharges, and many more, all under one roof.
-                        Digi Khata provides the convenience of managing your
-                        finances anytime, anywhere.
+
+                        {{#if link}}
+
+                            {{answerBefore}}
+
+                            <a
+                                href="{{link}}"
+                                target="_blank"
+                                class="text-blue-600 hover:underline"
+                            >
+                                {{linkText}}
+                            </a>
+
+                            {{answerAfter}}
+
+                        {{else}}
+
+                            {{answer}}
+
+                        {{/if}}
+
                     </p>
+
                 </div>
 
             </div>
 
-
-            <!-- FAQ 2 -->
-            <div class="group border border-gray-200 rounded-xl overflow-hidden">
-
-                <button
-                    type="button"
-                    class="faq-question w-full flex items-center justify-between gap-4 px-6 py-5 text-left font-medium text-gray-800 hover:bg-gray-50 transition"
-                >
-                    <span class="flex items-center gap-3 text-[18px] font-[600] group-hover:text-[#416BFA] transition-colors duration-200 cursor-pointer">
-                        <i class="fa fa-question rounded-[50px] text-[black] group-hover:text-[white] p-[10px_15px] group-hover:bg-[#416BFA]"></i>
-                        What is the process for setting up a Digi Khata pre-paid account?
-                    </span>
-
-                    <span class="faq-icon text-xl transition-transform duration-300">
-                        +
-                    </span>
-                </button>
-
-                <div class="faq-answer hidden px-6 pb-5">
-                    <p class="text-gray-600 leading-7">
-                        Applying for a Digi Khata pre-paid account is straightforward.
-                        You can easily open a Digi Khata pre-paid account by
-                        downloading the mobile application or visiting the nearest
-                        Digi Khata kiosk branch. You will need to complete the KYC
-                        process to unlock the full potential of Digi Khata.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <!-- FAQ 3 -->
-            <div class="group border border-gray-200 rounded-xl overflow-hidden">
-
-                <button
-                    type="button"
-                    class="faq-question w-full flex items-center justify-between gap-4 px-6 py-5 text-left font-medium text-gray-800 hover:bg-gray-50 transition"
-                >
-                    <span class="flex items-center gap-3 text-[18px] font-[600] group-hover:text-[#416BFA] transition-colors duration-200 cursor-pointer">
-                        <i class="fa fa-question rounded-[50px] p-[10px_15px] text-[black] group-hover:text-[white] group-hover:bg-[#416BFA]"></i>
-                        How do I sign up to create my new pre-paid Digi Khata account?
-                    </span>
-
-                    <span class="faq-icon text-xl transition-transform duration-300">
-                        +
-                    </span>
-                </button>
-
-                <div class="faq-answer hidden px-6 pb-5">
-                    <p class="text-gray-600 leading-7">
-                        To sign up and create your new pre-paid account with Digi
-                        Khata, download the Digi Khata app from
-                        <a
-                            href="https://digikhata.in/"
-                            target="_blank"
-                            class="text-blue-600 hover:underline"
-                        >
-                            Digi Khata
-                        </a>,
-                        install it on your device, follow the on-screen instructions,
-                        and complete the registration process.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <!-- FAQ 4 -->
-            <div class="group border border-gray-200 rounded-xl overflow-hidden">
-
-                <button
-                    type="button"
-                    class="faq-question w-full flex items-center justify-between gap-4 px-6 py-5 text-left font-medium text-gray-800 hover:bg-gray-50 transition"
-                >
-                    <span class="flex items-center gap-3 text-[18px] font-[600] group-hover:text-[#416BFA] transition-colors duration-200 cursor-pointer">
-                        <i class="fa fa-question p-[10px_15px] rounded-[50px] text-[black] group-hover:text-[white] group-hover:bg-[#416BFA]"></i>
-                        What types of support do you provide?
-                    </span>
-
-                    <span class="faq-icon text-xl transition-transform duration-300">
-                        +
-                    </span>
-                </button>
-
-                <div class="faq-answer hidden px-6 pb-5">
-                    <p class="text-gray-600 leading-7">
-                        We provide best-in-class support and training to help you
-                        manage and grow your business. Our regional team, with
-                        offices across India, is dedicated to assisting you with
-                        any questions or issues.
-                    </p>
-                </div>
-
-            </div>
+            {{/each}}
 
         </div>
 
     </div>
+
 </section>
