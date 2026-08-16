@@ -16,7 +16,7 @@ const siteData = {
                 },
                 {
                     name: "Digi Vyapaar",
-                    link: "/for-business/digi-vypaar"
+                    link: "/digi-vyapaar.html"
                 },
                 {
                     name: "Digikhata UPI",

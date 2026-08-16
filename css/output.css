@@ -362,9 +362,6 @@
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
-  .mb-\[30px\] {
-    margin-bottom: 30px;
-  }
   .block {
     display: block;
   }
@@ -859,9 +856,6 @@
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
   }
-  .pb-\[30px\] {
-    padding-bottom: 30px;
-  }
   .pl-1 {
     padding-left: var(--spacing);
   }
@@ -937,9 +931,6 @@
   }
   .text-\[32px\] {
     font-size: 32px;
-  }
-  .text-\[38px\] {
-    font-size: 38px;
   }
   .text-\[40px\] {
     font-size: 40px;
@@ -1251,9 +1242,6 @@
     .sm\:flex-row {
       flex-direction: row;
     }
-    .sm\:text-\[45px\] {
-      font-size: 45px;
-    }
   }
   @media (width >= 48rem) {
     .md\:order-0 {
@@ -1261,9 +1249,6 @@
     }
     .md\:order-1 {
       order: 1;
-    }
-    .md\:mt-12 {
-      margin-top: calc(var(--spacing) * 12);
     }
     .md\:h-11 {
       height: calc(var(--spacing) * 11);
@@ -1297,12 +1282,6 @@
     }
     .md\:w-8\/12 {
       width: calc(8 / 12 * 100%);
-    }
-    .md\:w-10\/12 {
-      width: calc(10 / 12 * 100%);
-    }
-    .md\:w-11\/12 {
-      width: calc(11 / 12 * 100%);
     }
     .md\:w-12 {
       width: calc(var(--spacing) * 12);

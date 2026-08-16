@@ -694,13 +694,38 @@ async function initApp() {
 
         await renderDigiKioskCta();     
 
+    }
+
+
+
+    // For Business menu k ander:-  Digi Vyapaar page
+
+
+
+    else if (path.endsWith("digi-vyapaar.html")){
+
+        
+        await renderDigiKioskHero();
+
+
 
 
     }
 
+
+
+
+
+
+
+
+
     await renderAppStore();       // ye sab pages me hai esliye eder rakha hai 
 
     await renderFooter();       //  ye sab pages me hai esliye eder rakha hai 
+
+
+
 
     initScrollReveal();
 }
