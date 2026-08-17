@@ -5,11 +5,11 @@
         <!-- Section Heading -->
         <div class="w-full md:w-7/12 lg:w-7/12 mx-auto text-center mb-12">
 
-            <h5 class="text-[18px] md:text-[20px] font-medium text-gray-900 mb-4">
+            <h5 class="text-[12px] lg:text-[16px] tracking-[0.2rem] uppercase  font-[600] text-[#416BFA] mb-4">
                 {{digiKioskServices.heading}}
             </h5>
 
-            <h1 class="text-[32px] md:text-[42px] lg:text-[48px] font-[700] leading-tight text-gray-900">
+            <h1 class="text-[32px] lg:text-[48px] font-[800] text-gray-900">
                 {{digiKioskServices.title}}
             </h1>
 
@@ -21,21 +21,22 @@
 
 
             <!-- Left Column -->
-            <div class="w-full md:w-5/12 px-4 md:px-2">
+            <div class="w-full lg:w-[364px] md:w-5/12 px-4 md:px-2 rounded-[15px]">
 
                 {{#each digiKioskServices.leftServices}}
 
-                <div class="mb-8">
+                <div class="mb-8 bg-[#F4F4F4] p-[25px]">
 
                     <!-- Image -->
-                    <div class="w-full flex justify-center mb-5">
+                    <div class="w-full flex justify-start mb-5 ">
 
-                        <div class="w-[120px] h-[120px] md:w-[140px] md:h-[140px] rounded-full flex items-center justify-center overflow-hidden">
+                        <div class=" w-[60px] h-[60px] lg:w-[70px] lg:h-[70px]  bg-[white] rounded-full flex items-center justify-center overflow-hidden">
 
                             <img
                                 src="{{image}}"
                                 alt="{{imageAlt}}"
-                                class="w-full h-full object-contain"
+                              
+                                class="w-[42px] h-[42px] object-contain"
                             >
 
                         </div>
@@ -44,7 +45,7 @@
 
 
                     <!-- Description -->
-                    <p class="text-center text-[15px] md:text-[16px] leading-7 text-gray-600">
+                    <p class="text-start text-[16px] lg:text-[22px] font-[600]  lg:leading-[33px] leading-[24px] text-gray-600">
                         {{description}}
                     </p>
 
@@ -60,17 +61,17 @@
 
                 {{#each digiKioskServices.rightServices}}
 
-                <div class="mb-8">
+                <div class="mb-8 bg-[#F4F4F4]">
 
                     <!-- Image -->
                     <div class="w-full flex justify-center mb-5">
 
-                        <div class="w-[120px] h-[120px] md:w-[140px] md:h-[140px] rounded-full flex items-center justify-center overflow-hidden">
+                        <div class="w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] bg-white rounded-full flex items-center justify-center overflow-hidden">
 
                             <img
                                 src="{{image}}"
                                 alt="{{imageAlt}}"
-                                class="w-full h-full object-contain"
+                                class="w-[42px] h-[42px] object-contain"
                             >
 
                         </div>
