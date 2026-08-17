@@ -25,7 +25,7 @@
 
                 {{#each digiKioskServices.leftServices}}
 
-                <div class="mb-8 bg-[#F4F4F4] p-[25px]">
+                <div class="mb-8 bg-[#F4F4F4] p-[25px] rounded-[15px]">
 
                     <!-- Image -->
                     <div class="w-full flex justify-start mb-5 ">
@@ -61,10 +61,10 @@
 
                 {{#each digiKioskServices.rightServices}}
 
-                <div class="mb-8 bg-[#F4F4F4]">
+                <div class="mb-8 bg-[#F4F4F4] max-w-[364px] p-[25px] rounded-[15px]">
 
                     <!-- Image -->
-                    <div class="w-full flex justify-center mb-5">
+                    <div class="w-full flex justify-start mb-5">
 
                         <div class="w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] bg-white rounded-full flex items-center justify-center overflow-hidden">
 
@@ -80,7 +80,7 @@
 
 
                     <!-- Description -->
-                    <p class="text-center text-[15px] md:text-[16px] leading-7 text-gray-600">
+                    <p class="text-start lg:text-[22px] text-[16px] font-[600] leading-7 text-gray-600">
                         {{description}}
                     </p>
 
@@ -90,9 +90,9 @@
 
 
                 <!-- Bottom Text -->
-                <div class="mt-8 text-center">
+                <div class="mt-8 text-center max-w-[348px] border-t border-black pt-[25px]">
 
-                    <p class="text-[20px] md:text-[24px] lg:text-[26px] font-[600] leading-8 text-gray-900">
+                    <p class="text-[20px] md:text-[24px] text-start lg:text-[26px] font-[600] leading-8 text-gray-900">
                         {{digiKioskServices.bottomText}}
                     </p>
 
