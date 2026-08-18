@@ -952,59 +952,28 @@ digivyapaarCta: {
 
 digiKhataUPITestimonials: {
 
-    heading: "Benefits",
-
-    title: "Get more from your store as it is",
-
     items: [
 
         {
-            image: "assets/images//Gramins1.png",
-            imageAlt: "Digi Vyapaar benefits",
-            imageLeft: false,
-
-            benefits: [
-                {
-                    title: "Accept UPI payments",
-                    description:
-                        "Accept payments from all UPI and bank apps, including Paytm, Google Pay, PhonePe, BHIM and more instantly"
-                },
-
-                {
-                    title: "Easy settlements",
-                    description:
-                        "Receive instant, seamless and secure collection and settlements on our easy to use multilingual app."
-                },
-
-                {
-                    title: "Get your QR",
-                    description:
-                        "Get your own QR instantly and receive error free payments. Easily stick and link our printed QR in your store."
-                }
-            ]
-        },
-
-
-        {
-            image: "assets/images//Gramins2.png",
-            imageAlt: "Rupay Pre-paid Card",
+            image: "assets/images//phone_mockup_1.png",
+            imageAlt: "phone mockup 1 image",
             imageLeft: true,
 
             benefits: [
                 {
-                    title: "Audio App notification",
+                    title: "Faster Transactions",
                     description:
-                        "The transaction notifications play automatically on the app in your preferred language. No additional box or system needs to be purchased to give real time information about transactions"
+                        "Our UPI solution ensures lightning-fast payment processing with minimal latency."
+                },
+                 {
+                    title: "Lowest Downtime",
+                    description:
+                        "Our robust infrastructure guarantees 99.99% uptime so you never miss a payment opportunity."
                 },
                  {
                     title: "Dedicated Support",
                     description:
-                        "Enjoy a seamless partnership experience with a dedicated distribution with 24/7 support tailored to your needs."
-                },
-                 {
-                    title: "Comprehensive Training",
-                    description:
-                          "Receive the ultimate sales enablement kit,including extensive training to boost your sales."
+                        "Get personalized assistance from your dedicated account manager for all your payment needs."
                 },
 
             ]
