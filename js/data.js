@@ -20,7 +20,7 @@ const siteData = {
                 },
                 {
                     name: "Digikhata UPI",
-                    link: "/for-business/upiapi"
+                    link: "/digikhata-upi.html"
                 },
                 {
                     name: "Network Collaborator",
@@ -777,10 +777,129 @@ digiKioskServices: {
 
 
 digikioskCta: {
-    title: "One app for all your financial needs",
+    title: "Open your Digi Kiosk NOW",
 
     description:
-        "Download our mobile application now and discover the power of accessing all your payments needs in one place.",
+        "Offer innovative products, earn high commissions and become the proud owner of a Digi Kiosk in your neighbourhood now!",
+
+    image: "assets/images/download_the_application.png",
+
+    imageAlt: "Download the Digi Khata application",
+
+    googlePlay: {
+        link: "https://play.google.com/store/apps/details?id=com.paypointz.wallet&pcampaignid=web_share",
+        image: "assets/images/google-play.png",
+        alt: "Get it on Google Play"
+    },
+
+    appleStore: {
+        link: "https://apps.apple.com/in/app/digi-khata/id1194920306",
+        image: "assets/images/apple-store.png",
+        alt: "Download on the App Store"
+    }
+},
+
+
+
+
+// Navbar k Under For Business k under Digi Vyapaar ka hai ----------------------------------------------
+
+
+  digiVyapaarHero: {
+        label: "For Shop Owners",
+
+        title: "Start accepting payment via UPI with Digi Vyapaar",
+
+        description:
+            "Upgrade to digital vyapar with Digi Vyapaar. Seamlessly accept payments through UPI.",
+
+        image: "assets/images/for-business.png",
+
+        imageAlt: "Digi Vyapaar",
+
+        subTitle: "Accept payments via a UPI QR code provided by a 100% compliant Bharatiya company",
+
+        subDescription:
+                  "Bharat is adopting digital payments via UPI/QR giving competition to most developed nations globally. Businesses and transactions are getting more and more digital and instant. If you fear missing the growing demand and need for UPI enabled transactions Digikhata Vypaar is the perfect solution."
+    },
+
+
+
+
+
+
+digiVyapaarBenefits: {
+
+    heading: "Benefits",
+
+    title: "Get more from your store as it is",
+
+    items: [
+
+        {
+            image: "assets/images//Gramins1.png",
+            imageAlt: "Digi Vyapaar benefits",
+            imageLeft: false,
+
+            benefits: [
+                {
+                    title: "Accept UPI payments",
+                    description:
+                        "Accept payments from all UPI and bank apps, including Paytm, Google Pay, PhonePe, BHIM and more instantly"
+                },
+
+                {
+                    title: "Easy settlements",
+                    description:
+                        "Receive instant, seamless and secure collection and settlements on our easy to use multilingual app."
+                },
+
+                {
+                    title: "Get your QR",
+                    description:
+                        "Get your own QR instantly and receive error free payments. Easily stick and link our printed QR in your store."
+                }
+            ]
+        },
+
+
+        {
+            image: "assets/images//Gramins2.png",
+            imageAlt: "Rupay Pre-paid Card",
+            imageLeft: true,
+
+            benefits: [
+                {
+                    title: "Audio App notification",
+                    description:
+                        "The transaction notifications play automatically on the app in your preferred language. No additional box or system needs to be purchased to give real time information about transactions"
+                },
+                 {
+                    title: "Dedicated Support",
+                    description:
+                        "Enjoy a seamless partnership experience with a dedicated distribution with 24/7 support tailored to your needs."
+                },
+                 {
+                    title: "Comprehensive Training",
+                    description:
+                          "Receive the ultimate sales enablement kit,including extensive training to boost your sales."
+                },
+
+            ]
+        },
+
+
+    ]
+},
+
+
+
+
+digivyapaarCta: {
+    title: "Open your Digi Vyapaar NOW",
+
+    description:
+        "Accept payments with via a UPI QR code provided by a 100% compliant Bharat company",
 
     image: "assets/images/download_the_application.png",
 
@@ -803,6 +922,97 @@ digikioskCta: {
 
 
 
+
+// Navbar k Under For Business k under DigiKhata UPI ka hai ----------------------------------------------
+
+
+
+ digikhataHero: {
+        // label: "For Shop Owners",
+
+        title: "Revolutionize Your Payment Collection with Digikhata Backed Online UPI",
+
+        description:
+            "Join thousands of merchants who trust DigiKhata for seamless, secure, and instant UPI payments with the highest success rates in the industry.",
+
+        // image: "assets/images/for-business.png",
+
+        // imageAlt: "Digikhata UPI",
+
+        // subTitle: "Accept payments via a UPI QR code provided by a 100% compliant Bharatiya company",
+
+        // subDescription:
+        //           "Bharat is adopting digital payments via UPI/QR giving competition to most developed nations globally. Businesses and transactions are getting more and more digital and instant. If you fear missing the growing demand and need for UPI enabled transactions Digikhata Vypaar is the perfect solution."
+    },
+
+
+
+
+
+
+digiKhataUPITestimonials: {
+
+    heading: "Benefits",
+
+    title: "Get more from your store as it is",
+
+    items: [
+
+        {
+            image: "assets/images//Gramins1.png",
+            imageAlt: "Digi Vyapaar benefits",
+            imageLeft: false,
+
+            benefits: [
+                {
+                    title: "Accept UPI payments",
+                    description:
+                        "Accept payments from all UPI and bank apps, including Paytm, Google Pay, PhonePe, BHIM and more instantly"
+                },
+
+                {
+                    title: "Easy settlements",
+                    description:
+                        "Receive instant, seamless and secure collection and settlements on our easy to use multilingual app."
+                },
+
+                {
+                    title: "Get your QR",
+                    description:
+                        "Get your own QR instantly and receive error free payments. Easily stick and link our printed QR in your store."
+                }
+            ]
+        },
+
+
+        {
+            image: "assets/images//Gramins2.png",
+            imageAlt: "Rupay Pre-paid Card",
+            imageLeft: true,
+
+            benefits: [
+                {
+                    title: "Audio App notification",
+                    description:
+                        "The transaction notifications play automatically on the app in your preferred language. No additional box or system needs to be purchased to give real time information about transactions"
+                },
+                 {
+                    title: "Dedicated Support",
+                    description:
+                        "Enjoy a seamless partnership experience with a dedicated distribution with 24/7 support tailored to your needs."
+                },
+                 {
+                    title: "Comprehensive Training",
+                    description:
+                          "Receive the ultimate sales enablement kit,including extensive training to boost your sales."
+                },
+
+            ]
+        },
+
+
+    ]
+},
 
 
 

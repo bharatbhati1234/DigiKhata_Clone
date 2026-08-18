@@ -652,6 +652,135 @@ async function renderDigiKioskCta() {
 }
 
 
+
+
+
+// Navbar k under for business menu k under digi kiosk page hai uska section hai -------------------------
+
+
+async function renderDigiVyapaarHero() {
+
+    const source = await loadTemplate(
+        "templates/partials/digi-vyapaar-hero.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+
+async function renderDigiVyapaarBenefits() {
+
+    const source = await loadTemplate(
+        "templates/partials/digi-vyapaar-benefits.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+async function renderDigivyapaarCta() {
+
+    const source = await loadTemplate(
+        "templates/partials/digi-vyapaar-cta.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+
+// Navbar k under for business menu k under digikhata upi page hai uska section hai -------------------------
+
+
+async function renderDigiKhataUPIHero() {
+
+    const source = await loadTemplate(
+        "templates/partials/digikhata-upi-hero.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+async function renderDigiKhataUPITestimonials() {
+
+    const source = await loadTemplate(
+        "templates/partials/digi-khata-testimonials.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
 async function initApp() {
 
     await renderNavbar();                  //  ye sab pages me esliye eder rakha hai 
@@ -705,7 +834,38 @@ async function initApp() {
     else if (path.endsWith("digi-vyapaar.html")){
 
         
-        await renderDigiKioskHero();
+        await renderDigiVyapaarHero();
+
+        await renderDigiVyapaarBenefits();
+
+        await renderDigiKioskSecurity();               // ye digi kiosk page ka he section hai reuse kiya hai khali call kiya hai   
+
+        await renderDigivyapaarCta();
+
+
+
+
+    }
+
+
+
+
+    // For Business menu k ander:-  DigiKhata UPI page --------------------------------------
+
+
+
+    else if (path.endsWith("digikhata-upi.html")){
+
+        
+        await renderDigiKhataUPIHero();
+
+        await renderDigiKhataUPITestimonials();
+
+        // await renderDigiVyapaarBenefits();
+
+        // await renderDigiKioskSecurity();               // ye digi kiosk page ka he section hai reuse kiya hai khali call kiya hai   
+
+        // await renderDigivyapaarCta();
 
 
 
