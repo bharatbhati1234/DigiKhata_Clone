@@ -762,7 +762,7 @@ async function renderDigiKhataUPIHero() {
 async function renderDigiKhataUPITestimonials() {
 
     const source = await loadTemplate(
-        "templates/partials/digi-khata-testimonials.hbs"
+        "templates/partials/digikhata-upi-testimonials.hbs"
     );
 
     const template =

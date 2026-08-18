@@ -927,7 +927,7 @@ digivyapaarCta: {
 
 
 
- digikhataHero: {
+ digikhataUPIHero: {
         // label: "For Shop Owners",
 
         title: "Revolutionize Your Payment Collection with Digikhata Backed Online UPI",
