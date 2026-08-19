@@ -986,6 +986,73 @@ digiKhataUPITestimonials: {
 
 
 
+digikhataUpiSolutions: {
+    title: "Our UPI Solutions",
+
+    solutions: [
+
+        {
+            title: "UPI Collect",
+
+            image: "/assets/images/phone_mockup_2.png",
+
+            imageAlt: "UPI Collect",
+
+            imageFirst: false,
+
+            features: [
+                "Customer enters UPI ID during checkout",
+                "Payment request sent to customer's UPI app",
+                "Customer approves request and enters UPI PIN",
+                "Instant payment confirmation",
+                "Seamless redirection back to merchant"
+            ]
+        },
+
+
+        {
+            title: "Dynamic QR Code",
+
+            image: "/assets/images/phone_mockup_2.png",
+
+            imageAlt: "Dynamic QR Code",
+
+            imageFirst: true,
+
+            features: [
+                "Generate unique QR codes for each transaction",
+                "Customers scan with any UPI app",
+                "No need to enter payment details manually",
+                "Ideal for web checkout flows",
+                "Supports variable amounts"
+            ]
+        },
+
+
+        {
+            title: "Pay via Any UPI App",
+
+            image: "/assets/images/phone_mockup_2.png",
+
+            imageAlt: "Pay via Any UPI App",
+
+            imageFirst: false,
+
+            features: [
+                "Customer selects preferred UPI app",
+                "App opens with pre-filled payment details",
+                "Customer verifies and approves payment",
+                "UPI PIN authentication for security",
+                "Automatic return to merchant site"
+            ]
+        }
+
+    ]
+}
+
+
+
+
 
 };
 

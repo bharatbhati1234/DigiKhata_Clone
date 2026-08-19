@@ -781,6 +781,32 @@ async function renderDigiKhataUPITestimonials() {
 }
 
 
+
+// renderDigiKhataUPISolutions
+
+
+async function renderDigiKhataUPISolutions() {
+
+    const source = await loadTemplate(
+        "templates/partials/digikhata-upi-solutions.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
 async function initApp() {
 
     await renderNavbar();                  //  ye sab pages me esliye eder rakha hai 
@@ -842,6 +868,8 @@ async function initApp() {
 
         await renderDigivyapaarCta();
 
+       
+
 
 
 
@@ -860,6 +888,9 @@ async function initApp() {
         await renderDigiKhataUPIHero();
 
         await renderDigiKhataUPITestimonials();
+
+
+         await renderDigiKhataUPISolutions();
 
         // await renderDigiVyapaarBenefits();
 

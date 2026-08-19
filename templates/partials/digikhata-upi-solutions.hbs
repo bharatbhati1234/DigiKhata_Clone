@@ -1,0 +1,113 @@
+<section class="w-full py-16 md:py-20 block scroll-reveal">
+    <div class="max-w-7xl mx-auto px-5">
+
+        <!-- Section Heading -->
+        <div class="w-full lg:w-7/12 mx-auto text-center mb-12">
+
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-[800] leading-tight">
+                {{digikhataUpiSolutions.title}}
+            </h1>
+
+        </div>
+
+
+        <!-- UPI Solutions -->
+        {{#each digikhataUpiSolutions.solutions}}
+
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16 mt-16">
+
+            <!-- Text -->
+            <div
+                class="
+                    w-full
+                    lg:w-4/12
+                    {{#if imageFirst}}lg:order-2{{else}}lg:order-1{{/if}}
+                "
+            >
+
+                <div class="mb-6">
+
+                    <h4 class="text-2xl font-bold mb-5">
+                        {{title}}
+                    </h4>
+
+
+                    <!-- Features -->
+                    <div class="space-y-4">
+
+                        {{#each features}}
+
+                        <div class="flex items-start gap-3">
+
+                            <!-- Check Circle -->
+                            <div
+                                class="
+                                    flex-shrink-0
+                                    mt-1
+                                    w-5 h-5
+                                    bg-[#416BFA]
+                                    rounded-full
+                                    flex
+                                    items-center
+                                    justify-center
+                                "
+                            >
+                                <svg
+                                    width="12"
+                                    height="10"
+                                    viewBox="0 0 12 10"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M1 5L4.5 8.5L11 1"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                    ></path>
+                                </svg>
+                            </div>
+
+                            <span class="text-black leading-[1.4] text-[16px]">
+                                {{this}}
+                            </span>
+
+                        </div>
+
+                        {{/each}}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Image -->
+            <div
+                class="
+                    w-full
+                    sm:w-8/12
+                    md:w-6/12
+                    lg:w-4/12
+                    {{#if imageFirst}}lg:order-1{{else}}lg:order-2{{/if}}
+                "
+            >
+
+                <div class="w-full flex justify-center">
+
+                    <img
+                        src="{{image}}"
+                        alt="{{imageAlt}}"
+                        class="w-full max-w-[320px] h-auto object-contain"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+        {{/each}}
+
+    </div>
+</section>
