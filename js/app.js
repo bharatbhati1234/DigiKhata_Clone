@@ -829,6 +829,35 @@ async function renderDigiKhataUPIForm() {
 }
 
 
+
+
+
+// Navbar k under for business menu k under network collaborator page hai uska section hai -------------------------
+
+
+async function rendernetworkCollaboratorHero() {
+
+    const source = await loadTemplate(
+        "templates/partials/network-collaborator-hero.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
 async function initApp() {
 
     await renderNavbar();                  //  ye sab pages me esliye eder rakha hai 
@@ -916,15 +945,23 @@ async function initApp() {
 
          await renderDigiKhataUPIForm();
 
-        // await renderDigiVyapaarBenefits();
-
-        // await renderDigiKioskSecurity();               // ye digi kiosk page ka he section hai reuse kiya hai khali call kiya hai   
-
-        // await renderDigivyapaarCta();
+        
 
 
 
 
+    }
+
+
+
+    // For Business menu k ander:-  Network Collaborator page --------------------------------------
+
+
+
+
+    else if(path.endsWith("network-collaborator.html")){
+
+        await rendernetworkCollaboratorHero();
     }
 
 

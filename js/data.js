@@ -24,7 +24,7 @@ const siteData = {
                 },
                 {
                     name: "Network Collaborator",
-                    link: "/for-business/networkcollaborator"
+                    link: "/network-collaborator.html"
                 },
                 {
                     name: "Enterprise Solutions",
@@ -1116,13 +1116,45 @@ digiKhataUPIForm: {
                 label: "Additional Requirements"
             }
         }
-    }
+    },
+
+
+
+
+
+
+
+
+// Navbar k Under For Business k under Network Collaborator ka hai ----------------------------------------------
+
+
+ networkCollaboratorHero: {
+        // label: "For Shop Owners",
+
+        title: "Become a Network Collaborator",
+
+        description1:
+            "Partner with Digikhata to bring seamless UPI and digital payment services to your entire network. As a collaborator, you gain access to a powerful suite of solutions including PPI wallets, QR codes, soundboxes, enterprise tools, and a range of next‑generation payment services.",
+        
+        description2:
+            "Partner with Digikhata to bring seamless UPI and digital payment services to your entire network. As a collaborator, you gain access to a powerful suite of solutions including PPI wallets, QR codes, soundboxes, enterprise tools, and a range of next‑generation payment services.",
+
+        buttonText: "Get Started Now",
+
+        // image: "assets/images/for-business.png",
+
+        // imageAlt: "Digikhata UPI",
+
+        // subTitle: "Accept payments via a UPI QR code provided by a 100% compliant Bharatiya company",
+
+        // subDescription:
+        //           "Bharat is adopting digital payments via UPI/QR giving competition to most developed nations globally. Businesses and transactions are getting more and more digital and instant. If you fear missing the growing demand and need for UPI enabled transactions Digikhata Vypaar is the perfect solution."
+    },
+
+
+
 
 };
-
-
-
-
 
 
 
