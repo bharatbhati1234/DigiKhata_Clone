@@ -986,6 +986,10 @@ digiKhataUPITestimonials: {
 
 
 
+
+
+
+
 digikhataUpiSolutions: {
     title: "Our UPI Solutions",
 
@@ -1048,13 +1052,84 @@ digikhataUpiSolutions: {
         }
 
     ]
-}
+},
 
 
 
 
+
+
+digiKhataUPIForm: {
+        title: "Get Started with DigiKhata UPI",
+
+        formSource: "upipg",
+
+        submitText: "Submit Request",
+
+        fields: {
+            name: {
+                label: "Full Name"
+            },
+
+            company: {
+                label: "Business Name"
+            },
+
+            email: {
+                label: "Email Address"
+            },
+
+            phone: {
+                label: "Phone Number"
+            },
+
+            business: {
+                label: "Business Type",
+
+                placeholder: "Select your business type",
+
+                options: [
+                    {
+                        value: "ecommerce",
+                        label: "E-commerce"
+                    },
+                    {
+                        value: "retail",
+                        label: "Retail"
+                    },
+                    {
+                        value: "services",
+                        label: "Services"
+                    },
+                    {
+                        value: "education",
+                        label: "Education"
+                    },
+                    {
+                        value: "other",
+                        label: "Other"
+                    }
+                ]
+            },
+
+            message: {
+                label: "Additional Requirements"
+            }
+        }
+    }
 
 };
+
+
+
+
+
+
+
+
+
+
+
 
 
 
