@@ -881,6 +881,56 @@ async function rendernetworkCollaboratorFeatures() {
 
 
 
+async function rendernetworkCollaboratorForm() {
+
+    const source = await loadTemplate(
+        "templates/partials/network-collaborator-form.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+// Navbar k under for business menu k under enterprise solutions page hai uska section hai -------------------------
+
+
+async function renderenterpriseSolutionsHero() {
+
+    const source = await loadTemplate(
+        "templates/partials/enterprise-solutions-hero.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
 async function initApp() {
 
     await renderNavbar();                  //  ye sab pages me esliye eder rakha hai 
@@ -963,10 +1013,9 @@ async function initApp() {
 
         await renderDigiKhataUPITestimonials();
 
+        await renderDigiKhataUPISolutions();
 
-         await renderDigiKhataUPISolutions();
-
-         await renderDigiKhataUPIForm();
+        await renderDigiKhataUPIForm();
 
         
 
@@ -981,13 +1030,32 @@ async function initApp() {
 
 
 
-
     else if(path.endsWith("network-collaborator.html")){
 
         await rendernetworkCollaboratorHero();
 
         await rendernetworkCollaboratorFeatures();
+
+        await rendernetworkCollaboratorForm();
     }
+
+
+
+
+// For Business menu k ander:-  Enterprise Solutions page --------------------------------------
+
+
+
+    else if(path.endsWith("enterprise-solutions.html")){
+
+
+        await renderenterpriseSolutionsHero();
+
+
+    }
+
+
+
 
 
 

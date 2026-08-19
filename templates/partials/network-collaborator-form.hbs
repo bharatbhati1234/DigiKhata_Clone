@@ -1,0 +1,176 @@
+<section class="w-full py-12 sm:py-16 md:py-20">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Title -->
+        <h2
+            class="text-center text-[32px]  font-[600] text-gray-800 mb-4 md:mb-6"
+        >
+            {{networkCollaboratorForm.title}}
+        </h2>
+
+
+        <!-- Form Container -->
+        <div
+            class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-5 sm:p-8 md:p-10"
+        >
+
+            <form
+                id="leadForm"
+                data-form-source="{{networkCollaboratorForm.formSource}}"
+                class="space-y-5"
+            >
+
+                <!-- Message -->
+                <div id="msg" class="w-full"></div>
+
+
+                <!-- Full Name -->
+                <div>
+                    <label
+                        for="name"
+                        class="block mb-2 text-sm sm:text-base font-[600] text-gray-700"
+                    >
+                        {{networkCollaboratorForm.fields.name.label}}
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        maxlength="100"
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 outline-none focus:border-[#416BFA] focus:ring-2 focus:ring-blue-100 transition"
+                    >
+                </div>
+
+
+                <!-- Business Name -->
+                <div>
+                    <label
+                        for="company"
+                        class="block mb-2 text-sm sm:text-base font-[600] text-gray-700"
+                    >
+                        {{networkCollaboratorForm.fields.company.label}}
+                    </label>
+
+                    <input
+                        type="text"
+                        id="company"
+                        name="company"
+                        required
+                        maxlength="100"
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 outline-none focus:border-[#416BFA] focus:ring-2 focus:ring-blue-100 transition"
+                    >
+                </div>
+
+
+                <!-- Email -->
+                <div>
+                    <label
+                        for="email"
+                        class="block mb-2 text-sm sm:text-base font-[600] text-gray-700"
+                    >
+                        {{networkCollaboratorForm.fields.email.label}}
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        maxlength="100"
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 outline-none focus:border-[#416BFA] focus:ring-2 focus:ring-blue-100 transition"
+                    >
+                </div>
+
+
+                <!-- Phone -->
+                <div>
+                    <label
+                        for="phone"
+                        class="block mb-2 text-sm sm:text-base font-[600] text-gray-700"
+                    >
+                        {{networkCollaboratorForm.fields.phone.label}}
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        maxlength="10"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 outline-none focus:border-[#416BFA] focus:ring-2 focus:ring-blue-100 transition"
+                    >
+                </div>
+
+
+                <!-- Business Type -->
+                <div>
+                    <label
+                        for="business"
+                        class="block mb-2 text-sm sm:text-base font-[600] text-gray-700"
+                    >
+                        {{networkCollaboratorForm.fields.business.label}}
+                    </label>
+
+                    <select
+                        id="business"
+                        name="business"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white outline-none focus:border-[#416BFA] focus:ring-2 focus:ring-blue-100 transition"
+                    >
+                        <option value="">
+                            {{networkCollaboratorForm.fields.business.placeholder}}
+                        </option>
+
+                        {{#each networkCollaboratorForm.fields.business.options}}
+                            <option value="{{value}}">
+                                {{label}}
+                            </option>
+                        {{/each}}
+
+                    </select>
+                </div>
+
+
+                <!-- Additional Requirements -->
+                <div>
+                    <label
+                        for="message"
+                        class="block mb-2 text-sm sm:text-base font-[600] text-gray-700"
+                    >
+                        {{networkCollaboratorForm.fields.message.label}}
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        maxlength="100"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 outline-none resize-none focus:border-[#416BFA] focus:ring-2 focus:ring-blue-100 transition"
+                    ></textarea>
+                </div>
+
+
+                <!-- Submit -->
+                <div class="pt-2 flex justify-center items-center">
+                    <button
+                        id="submit"
+                        name="submit"
+                        type="button"
+                        class="w-full sm:w-auto px-8 py-3  rounded-[8px] bg-[#416BFA] text-white font-[600] hover:bg-[#0f388f] transition-all duration-300 cursor-pointer"
+                    >
+                        {{networkCollaboratorForm.submitText}}
+                    </button>
+                </div>
+
+            </form>
+
+
+        
+
+        </div>
+
+    </div>
+</section>
