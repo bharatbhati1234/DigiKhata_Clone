@@ -858,6 +858,29 @@ async function rendernetworkCollaboratorHero() {
 
 
 
+async function rendernetworkCollaboratorFeatures() {
+
+    const source = await loadTemplate(
+        "templates/partials/network-collaborator-features.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
 async function initApp() {
 
     await renderNavbar();                  //  ye sab pages me esliye eder rakha hai 
@@ -962,6 +985,8 @@ async function initApp() {
     else if(path.endsWith("network-collaborator.html")){
 
         await rendernetworkCollaboratorHero();
+
+        await rendernetworkCollaboratorFeatures();
     }
 
 

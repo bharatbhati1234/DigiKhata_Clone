@@ -1154,6 +1154,56 @@ digiKhataUPIForm: {
 
 
 
+
+networkCollaboratorFeatures: {
+
+    title: "Key Features",
+
+    leftServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"Instant Transfers",
+            description:
+                "Enable IMPS transfers for real-time transactions or NEFT for scheduled transfers with our robust platform."
+        }
+    ],
+
+    middleServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            heading:"Competitive Pricing",
+            description:
+                "Attractive pricing structure with transparent fees."
+        },
+
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "Pre-paid card services",
+            heading:"Mobile First",
+            description:
+                "Optimized for mobile platforms with simple OTP verification flows for seamless user experience."
+        }
+    ],
+
+    rightServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"KYC",
+            description:
+                "Instant KYC, Biometric and OTP-based authentication ensures every transaction is secure and verified."
+        }
+    ],
+
+    bottomText:
+        "... And let your customers enjoy the convenience of digital payments"
+},
+
+
+
+
 };
 
 
