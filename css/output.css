@@ -1430,20 +1430,8 @@
     .md\:w-1\/3 {
       width: calc(1 / 3 * 100%);
     }
-    .md\:w-5\/1 {
-      width: calc(5 / 1 * 100%);
-    }
     .md\:w-5\/12 {
       width: calc(5 / 12 * 100%);
-    }
-    .md\:w-5\/14 {
-      width: calc(5 / 14 * 100%);
-    }
-    .md\:w-5\/16 {
-      width: calc(5 / 16 * 100%);
-    }
-    .md\:w-5\/18 {
-      width: calc(5 / 18 * 100%);
     }
     .md\:w-6\/12 {
       width: calc(6 / 12 * 100%);

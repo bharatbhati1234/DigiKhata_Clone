@@ -931,6 +931,85 @@ async function renderenterpriseSolutionsHero() {
 
 
 
+
+
+
+async function renderenterpriseSolutionsUseCases() {
+
+    const source = await loadTemplate(
+        "templates/partials/enterprise-solutions-usecases.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+async function renderenterpriseSolutionsForm() {
+
+    const source = await loadTemplate(
+        "templates/partials/enterprise-solutions-form.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+
+
+// Navbar k under for business menu k under gift Card page hai uska section hai -------------------------
+
+
+async function rendergiftCardHero() {
+
+    const source = await loadTemplate(
+        "templates/partials/gift-card-hero.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
 async function initApp() {
 
     await renderNavbar();                  //  ye sab pages me esliye eder rakha hai 
@@ -1051,7 +1130,18 @@ async function initApp() {
 
         await renderenterpriseSolutionsHero();
 
+        await renderenterpriseSolutionsUseCases();
 
+        await renderenterpriseSolutionsForm();
+
+
+    }
+
+
+
+    else if(path.endsWith("gift-card.html")){
+
+        await rendergiftCardHero();
     }
 
 

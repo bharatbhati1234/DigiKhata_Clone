@@ -32,7 +32,7 @@ const siteData = {
                 },
                 {
                     name: "Gift Card",
-                    link: "/for-business/giftcard"
+                    link: "/gift-card.html"
                 },
                 {
                     name: "Expense Management",
@@ -1275,6 +1275,149 @@ networkCollaboratorForm: {
  enterpriseSolutionsHero: {
 
         title: "DigiKhata Enterprise Solutions",
+
+       
+        buttonText: "Get Started Now",
+
+    },
+
+
+
+
+
+
+
+
+enterpriseSolutionsUseCases: {
+
+    title: "Versatile Use Cases",
+
+    leftServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"Vendor Payments",
+            description:
+                "Streamline payments to your suppliers and service providers with just a few clicks."
+        },
+         {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"Rewards & Cashback",
+            description:
+                "Distribute incentives to customers and partners quickly and securely."
+        },
+
+      
+    ],
+
+    middleServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            heading:"Commission Transfer Fund",
+            description:
+                "Automate commission payments to your sales force or affiliates with ease."
+        },
+
+       
+
+    ],
+
+    rightServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"Salary Disbursements",
+            description:
+                "Automate payroll for employees and contractors with our reliable Enterprise Solutions."
+        },
+
+         {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            heading:"Payment Flexibility",
+            description:
+                "Offer UPI, IMPS, NEFT, and card transactions directly from the DigiKhata UPI app."
+        },
+
+    ]
+
+},
+
+  
+
+  
+
+
+enterpriseSolutionsForm: {
+        title: "Get Started with DigiKhata Enterprise Solutions",
+
+        formSource: "upipg",
+
+        submitText: "Submit Request",
+
+        fields: {
+            name: {
+                label: "Full Name"
+            },
+
+            company: {
+                label: "Business Name"
+            },
+
+            email: {
+                label: "Email Address"
+            },
+
+            phone: {
+                label: "Phone Number"
+            },
+
+            business: {
+                label: "Business Type",
+
+                placeholder: "Select your business type",
+
+                options: [
+                    {
+                        value: "ecommerce",
+                        label: "E-commerce"
+                    },
+                    {
+                        value: "retail",
+                        label: "Retail"
+                    },
+                    {
+                        value: "services",
+                        label: "Services"
+                    },
+                    {
+                        value: "education",
+                        label: "Education"
+                    },
+                    {
+                        value: "other",
+                        label: "Other"
+                    }
+                ]
+            },
+
+            message: {
+                label: "Additional Requirements"
+            }
+        }
+    },
+
+
+
+
+    // Navbar k Under For Business k under Gift Card ka hai ----------------------------------------------
+
+
+ giftCardHero: {
+
+        title: "Gift them the freedom to choose their gift",
 
        
         buttonText: "Get Started Now",
