@@ -1082,6 +1082,51 @@ async function renderexpenseManagementHero() {
 
 
 
+async function renderexpenseManagementBusiness() {
+
+    const source = await loadTemplate(
+        "templates/partials/expense-management-business.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+async function renderexpenseManagementFeatures() {
+
+    const source = await loadTemplate(
+        "templates/partials/expense-management-features.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
 async function initApp() {
 
     await renderNavbar();                  //  ye sab pages me esliye eder rakha hai 
@@ -1232,6 +1277,10 @@ async function initApp() {
     else if(path.endsWith("expense-management.html")){
 
         await renderexpenseManagementHero();
+
+        await renderexpenseManagementBusiness();
+
+        await renderexpenseManagementFeatures();
     }
 
 

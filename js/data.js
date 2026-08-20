@@ -1581,7 +1581,7 @@ giftCardForm: {
         title: "Smart Expense Management Solutions To Power Your Business Growth",
 
         description1:
-            "Unlock Endless Possibilities, Simplify Rewards, and Empower Your Team Effortlessly with DigiKhata Corporate Gift Cards!",
+            "Digitize employee expenses, reimbursements & benefits with our ppi wallet powered expense management solution. Instant wallet creation & activation for seamless expense management.",
         
         image: "assets/images/GiftCard.png",
 
@@ -1593,6 +1593,106 @@ giftCardForm: {
         buttonText: "Get Started Now",
 
     },
+
+
+
+
+
+
+
+expenseManagementBusiness: {
+
+    title: "Digitize Your Business Expenses",
+
+    description1:
+            "An all-in-one solution to streamline employee expenses and reimbursements, saving time and cutting costs.",
+        
+
+    leftServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"Expense Tracking",
+            description:
+                "Capture accurate expense data from employees with digital receipts and automated categorization."
+        },
+     
+
+      
+    ],
+
+    middleServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            heading:"Multi-Wallet Card",
+            description:
+                "Single card solution for all employee benefits with instant loading and activation."
+        },
+
+           {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            heading:"Policy Compliance",
+            description:
+                "Automate your expense policy and approvals with built-in compliance checks."
+        },
+
+       
+
+    ],
+
+    rightServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"Real-Time Visibility to the Wallet Holder",
+            description:
+                "Get instant visibility into spending and budgets with our intuitive dashboard."
+        },
+
+         {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            heading:"Seamless Integration",
+            description:
+                "Continuous sync to your accounting software and existing ERP & HRMS systems."
+        },
+
+    ]
+
+},
+
+
+
+
+expenseManagementFeatures: {
+    mobileTitle: "Digitized Expense Management for New-Age Businesses",
+
+    desktopTitle: "Digitized Expense Management for New-Age Businesses",
+
+    description:
+        "Simplify employee benefits with streamlined processes, offering flexibility and ease on a single platform.",
+
+    features: [
+        {
+            icon: "assets/images/wallet.png",
+            iconAlt: "Bank Icon",
+            title: "Employee Expenses",
+            description:
+                "Manage all employee expenses with spending control."
+        },
+
+        {
+            icon: "assets/images/wallet.png",
+            iconAlt: "Access Icon",
+            title: "Employee Benefits",
+            description:
+                "Flexible benefits management with our expense management solution."
+        }
+    ]
+},
+
 
 
 
