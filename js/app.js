@@ -1010,6 +1010,51 @@ async function rendergiftCardHero() {
 
 
 
+async function rendergiftCardBusiness() {
+
+    const source = await loadTemplate(
+        "templates/partials/gift-card-business.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+async function rendergiftCardForm() {
+
+    const source = await loadTemplate(
+        "templates/partials/gift-card-form.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
 async function initApp() {
 
     await renderNavbar();                  //  ye sab pages me esliye eder rakha hai 
@@ -1142,6 +1187,10 @@ async function initApp() {
     else if(path.endsWith("gift-card.html")){
 
         await rendergiftCardHero();
+
+        await rendergiftCardBusiness();
+
+        await rendergiftCardForm();
     }
 
 

@@ -1419,9 +1419,149 @@ enterpriseSolutionsForm: {
 
         title: "Gift them the freedom to choose their gift",
 
+        description1:
+            "Unlock Endless Possibilities, Simplify Rewards, and Empower Your Team Effortlessly with DigiKhata Corporate Gift Cards!",
+        
+        image: "assets/images/GiftCard.png",
+
+        imageAlt: "gift card image",
+
+        imageLeft: true,
+
        
         buttonText: "Get Started Now",
 
+    },
+
+
+
+
+
+
+
+giftCardBusiness: {
+
+    title: "Why Choose DigiKhata Gift Cards for Your Business?",
+
+    leftServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"Flexible",
+            description:
+                "Use anywhere that accepts RuPay cards, giving recipients complete freedom to choose their perfect gift."
+        },
+         {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"Manageable",
+            description:
+                "Track spending easily with our online dashboard and get detailed usage reports."
+        },
+
+      
+    ],
+
+    middleServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            heading:"Customizable",
+            description:
+                "Load any amount upto 10K."
+        },
+
+           {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            heading:"Cost-Effective",
+            description:
+                "Enjoy tax benefits and reduced administrative costs compared to traditional gifting methods."
+        },
+
+       
+
+    ],
+
+    rightServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"Easy Distribution",
+            description:
+                "Digital or physical cards available, making it simple to send rewards to anyone, anywhere."
+        },
+
+         {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            heading:"Dedicated Support",
+            description:
+                "Our expert team is always available to help with any questions or custom requirements."
+        },
+
+    ]
+
+},
+
+
+giftCardForm: {
+        title: "Get Your Corporate Gift Cards",
+
+        formSource: "upipg",
+
+        submitText: "Submit Request",
+
+        fields: {
+            name: {
+                label: "Full Name"
+            },
+
+            company: {
+                label: "Business Name"
+            },
+
+            email: {
+                label: "Email Address"
+            },
+
+            phone: {
+                label: "Phone Number"
+            },
+
+            business: {
+                label: "Business Type",
+
+                placeholder: "Select your business type",
+
+                options: [
+                    {
+                        value: "ecommerce",
+                        label: "E-commerce"
+                    },
+                    {
+                        value: "retail",
+                        label: "Retail"
+                    },
+                    {
+                        value: "services",
+                        label: "Services"
+                    },
+                    {
+                        value: "education",
+                        label: "Education"
+                    },
+                    {
+                        value: "other",
+                        label: "Other"
+                    }
+                ]
+            },
+
+            message: {
+                label: "Additional Requirements"
+            }
+        }
     },
 
 
