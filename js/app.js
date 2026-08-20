@@ -1126,6 +1126,63 @@ async function renderexpenseManagementFeatures() {
 }
 
 
+async function renderexpenseManagementBenefits() {
+
+    const source = await loadTemplate(
+        "templates/partials/expense-management-benefits.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+async function renderexpenseManagementForm() {
+
+    const source = await loadTemplate(
+        "templates/partials/expense-management-Form.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 async function initApp() {
 
@@ -1281,6 +1338,10 @@ async function initApp() {
         await renderexpenseManagementBusiness();
 
         await renderexpenseManagementFeatures();
+
+        await renderexpenseManagementBenefits();
+
+        await renderexpenseManagementForm();
     }
 
 

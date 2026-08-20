@@ -1667,31 +1667,126 @@ expenseManagementBusiness: {
 
 
 expenseManagementFeatures: {
-    mobileTitle: "Digitized Expense Management for New-Age Businesses",
-
-    desktopTitle: "Digitized Expense Management for New-Age Businesses",
+    title: "Digitized Expense Management for New-Age Businesses",
 
     description:
         "Simplify employee benefits with streamlined processes, offering flexibility and ease on a single platform.",
 
-    features: [
+    cards: [
         {
-            icon: "assets/images/wallet.png",
-            iconAlt: "Bank Icon",
             title: "Employee Expenses",
             description:
-                "Manage all employee expenses with spending control."
-        },
-
-        {
+                "Manage all employee expenses with spending control.",
             icon: "assets/images/wallet.png",
-            iconAlt: "Access Icon",
+            iconAlt: "Bank Icon"
+        },
+        {
             title: "Employee Benefits",
             description:
-                "Flexible benefits management with our expense management solution."
+                "Flexible benefits management with our expense management solution.",
+            icon: "assets/images/wallet.png",
+            iconAlt: "Access Icon"
         }
     ]
 },
+
+expenseManagementBenefits: {
+    title: "Experience the Future of Employee Benefits",
+
+    description:
+        "Our card offers all benefits in a single, secure solution accepted everywhere.",
+
+    image: "assets/images/RupayCard_2.png",
+
+    imageAlt: "Digi Khata RuPay Card",
+
+    points: [
+        {
+            title: "Wide Acceptance",
+            description:
+                "Accepted at all major stores and online platforms across the country."
+        },
+        {
+            title: "User Friendly",
+            description:
+                "Simple swipe and shop experience with easy-to-use mobile app."
+        },
+        {
+            title: "Highly Secure",
+            description:
+                "Best-in-class security features to protect against fraud."
+        },
+        {
+            title: "Tax Benefits",
+            description:
+                "Optimize employee tax benefits through flexible wallet allocations."
+        }
+    ]
+},
+
+
+
+expenseManagementForm: {
+        title: "Get In Touch",
+
+        description1:
+                "Request a demo or speak with our expense management experts.",
+
+        formSource: "upipg",
+
+        submitText: "Submit Request",
+
+        fields: {
+            name: {
+                label: "Full Name"
+            },
+
+            company: {
+                label: "Business Name"
+            },
+
+            email: {
+                label: "Email Address"
+            },
+
+            phone: {
+                label: "Phone Number"
+            },
+
+            business: {
+                label: "Business Type",
+
+                placeholder: "Select your business type",
+
+                options: [
+                    {
+                        value: "ecommerce",
+                        label: "E-commerce"
+                    },
+                    {
+                        value: "retail",
+                        label: "Retail"
+                    },
+                    {
+                        value: "services",
+                        label: "Services"
+                    },
+                    {
+                        value: "education",
+                        label: "Education"
+                    },
+                    {
+                        value: "other",
+                        label: "Other"
+                    }
+                ]
+            },
+
+            message: {
+                label: "Additional Requirements"
+            }
+        }
+    },
 
 
 
