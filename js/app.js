@@ -1055,6 +1055,33 @@ async function rendergiftCardForm() {
 
 
 
+
+// Navbar k under for business menu k under Expense Management page hai uska section hai -------------------------
+
+
+async function renderexpenseManagementHero() {
+
+    const source = await loadTemplate(
+        "templates/partials/expense-management-hero.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
 async function initApp() {
 
     await renderNavbar();                  //  ye sab pages me esliye eder rakha hai 
@@ -1182,6 +1209,7 @@ async function initApp() {
 
     }
 
+// For Business menu k ander:-  Gift Card page --------------------------------------
 
 
     else if(path.endsWith("gift-card.html")){
@@ -1191,6 +1219,19 @@ async function initApp() {
         await rendergiftCardBusiness();
 
         await rendergiftCardForm();
+    }
+
+
+
+
+
+
+// For Business menu k ander:-  Expense Management page --------------------------------------
+
+
+    else if(path.endsWith("expense-management.html")){
+
+        await renderexpenseManagementHero();
     }
 
 

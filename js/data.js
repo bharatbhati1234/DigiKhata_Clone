@@ -36,7 +36,7 @@ const siteData = {
                 },
                 {
                     name: "Expense Management",
-                    link: "/for-business/expensemanagement"
+                    link: "/expense-management.html"
                 },
                 {
                     name: "Cobrand Pre-paid Card",
@@ -1565,6 +1565,33 @@ giftCardForm: {
                 label: "Additional Requirements"
             }
         }
+    },
+
+
+
+
+
+
+
+    // Navbar k Under For Business k under Gift Card ka hai ----------------------------------------------
+
+
+ expenseManagementHero: {
+
+        title: "Smart Expense Management Solutions To Power Your Business Growth",
+
+        description1:
+            "Unlock Endless Possibilities, Simplify Rewards, and Empower Your Team Effortlessly with DigiKhata Corporate Gift Cards!",
+        
+        image: "assets/images/GiftCard.png",
+
+        imageAlt: "gift card image",
+
+        imageLeft: true,
+
+       
+        buttonText: "Get Started Now",
+
     },
 
 
