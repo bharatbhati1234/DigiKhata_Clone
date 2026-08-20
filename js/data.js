@@ -567,27 +567,27 @@ footer: {
                 },
                 {
                     name: "Terms & Condition",
-                    url: "/pdf/Terms & Conditions _ 2025.pdf"
+                    url: "https://www.digikhata.in/pdf/Terms%20&%20Conditions%20_%202025.pdf"
                 },
                 {
                     name: "Customer Protection Policy",
-                    url: "/pdf/Customer_Protection_Policy.pdf"
+                    url: "https://www.digikhata.in/pdf/Customer_Protection_Policy.pdf"
                 },
                 {
                     name: "Breakage Policy",
-                    url: "/pdf/Card Expiry_Breakage_Income_Policy.pdf"
+                    url: "https://www.digikhata.in/pdf/Card%20Expiry_Breakage_Income_Policy.pdf"
                 },
                 {
                     name: "Grievance Policy",
-                    url: "/grievance-policy"
+                    url: "https://www.digikhata.in/grievance-policy"
                 },
                 {
                     name: "Aadhaar Data Privacy Policy",
-                    url: "/pdf/AadharDataPrivacyPolicy.pdf"
+                    url: "https://www.digikhata.in/pdf/AadharDataPrivacyPolicy.pdf"
                 },
                 {
                     name: "Policy for PPI Business",
-                    url: "/pdf/Policy_for_PPI_Business.pdf"
+                    url: "https://www.digikhata.in/pdf/Policy_for_PPI_Business.pdf"
                 }
             ]
         }
@@ -1507,6 +1507,9 @@ giftCardBusiness: {
 
 giftCardForm: {
         title: "Get Your Corporate Gift Cards",
+
+        description1:
+                "Fill out the form below and our team will contact you with a personalized quote",
 
         formSource: "upipg",
 
