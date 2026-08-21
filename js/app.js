@@ -1173,6 +1173,29 @@ async function renderexpenseManagementForm() {
 
 
 
+async function renderexpenseManagementTransform() {
+
+    const source = await loadTemplate(
+        "templates/partials/expense-management-transform.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
 
 
 
@@ -1342,6 +1365,8 @@ async function initApp() {
         await renderexpenseManagementBenefits();
 
         await renderexpenseManagementForm();
+
+        await renderexpenseManagementTransform();
     }
 
 

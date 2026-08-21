@@ -4,24 +4,24 @@
 
         <div class="w-full lg:w-10/12 mx-auto bg-[#3A68FF] rounded-[40px] overflow-hidden">
 
-            <div class="flex flex-col lg:flex-row items-center">
+            <div class="flex flex-col lg:flex-row justify-center items-center">
 
                 <!-- Image -->
-                <div class="w-full lg:w-5/12 order-2 lg:order-1">
+                {{!-- <div class="w-full lg:w-5/12 order-2 lg:order-1">
 
                     <div class="w-full flex justify-center lg:justify-start items-center
                                 lg:absolute lg:top-[-41px] lg:left-[112px]
                                 px-6 py-6 lg:px-0 lg:py-0">
 
                         <img
-                            src="{{downloadApp.image}}"
-                            alt="{{downloadApp.imageAlt}}"
+                            src="{{expenseManagementTransform.image}}"
+                            alt="{{expenseManagementTransform.imageAlt}}"
                             class="w-full max-w-[320px] md:max-w-[350px] lg:max-w-[320px] h-auto object-contain"
                         >
 
                     </div>
 
-                </div>
+                </div> --}}
 
 
                 <!-- Content -->
@@ -30,34 +30,34 @@
                     <div class="pb-6">
 
                         <h2
-                            class="text-[32px] md:text-[40px] lg:text-[45px] font-[700] leading-tight text-white"
+                            class="text-[32px] md:text-[40px] lg:text-[45px] font-[700] text-center leading-tight text-white"
                         >
-                            {{downloadApp.title}}
+                            {{expenseManagementTransform.title}}
                         </h2>
 
                         <p
-                            class="mt-5 text-[16px] md:text-[18px] leading-7 text-white"
+                            class="mt-5 text-[16px] md:text-[18px] leading-7 text-center text-white"
                         >
-                            {{downloadApp.description}}
+                            {{expenseManagementTransform.description}}
                         </p>
 
                     </div>
 
 
                     <!-- App Store Buttons -->
-                    <div class="flex flex-col justify-start items-start gap-4 block scroll-reveal">
+                    <div class="text-center scroll-reveal">
 
                         <!-- Google Play -->
                         <a
-                            href="{{downloadApp.googlePlay.link}}"
+                            href="{{expenseManagementTransform.googlePlay.link}}"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="inline-flex items-center justify-center bg-white rounded-[50px] border-r-4 border-b-4 border-orange-500 px-4 py-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                         >
 
                             <img
-                                src="{{downloadApp.googlePlay.image}}"
-                                alt="{{downloadApp.googlePlay.alt}}"
+                                src="{{expenseManagementTransform.googlePlay.image}}"
+                                alt="{{expenseManagementTransform.googlePlay.alt}}"
                                 class="h-10 md:h-11 w-auto object-contain"
                             >
 
@@ -65,20 +65,20 @@
 
 
                         <!-- Apple Store -->
-                        <a
-                            href="{{downloadApp.appleStore.link}}"
+                        {{!-- <a
+                            href="{{expenseManagementTransform.appleStore.link}}"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="inline-flex items-center justify-center bg-white rounded-[50px] border-r-4 border-b-4 border-orange-500 px-4 py-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                         >
 
                             <img
-                                src="{{downloadApp.appleStore.image}}"
-                                alt="{{downloadApp.appleStore.alt}}"
+                                src="{{expenseManagementTransform.appleStore.image}}"
+                                alt="{{expenseManagementTransform.appleStore.alt}}"
                                 class="h-10 md:h-11 w-auto object-contain"
                             >
 
-                        </a>
+                        </a> --}}
 
                     </div>
 

@@ -375,7 +375,7 @@ announcement: "Enabled for all types of transactions",
 
 
 
-section11: {
+downloadApp: {
     title: "One app for all your financial needs",
 
     description:
@@ -1416,22 +1416,23 @@ enterpriseSolutionsForm: {
 
 
  giftCardHero: {
+    title: "Gift them the freedom to choose their gift",
 
-        title: "Gift them the freedom to choose their gift",
+    backgroundText: "DIGIKHATA",
 
-        description1:
-            "Unlock Endless Possibilities, Simplify Rewards, and Empower Your Team Effortlessly with DigiKhata Corporate Gift Cards!",
-        
-        image: "assets/images/GiftCard.png",
+    mobileTitle: "Get your instant mobile application",
 
-        imageAlt: "gift card image",
+    image: "assets/images/GiftCard.png",
 
-        imageLeft: true,
+    imageAlt: "DigiKhata Gift Card",
 
-       
-        buttonText: "Get Started Now",
+    description1:
+        "Unlock Endless Possibilities, Simplify Rewards, and Empower Your Team Effortlessly with DigiKhata Corporate Gift Cards!",
 
-    },
+    buttonText: "Get Started Now",
+
+    buttonLink: "#lead-form-section"
+},
 
 
 
@@ -1787,6 +1788,39 @@ expenseManagementForm: {
             }
         }
     },
+
+
+
+
+
+
+expenseManagementTransform: {
+    title: "One app for all your financial needs",
+
+    description:
+        "Download our mobile application now and discover the power of accessing all your payments needs in one place.",
+
+    image: "assets/images/download_the_application.png",
+
+    imageAlt: "Download the Digi Khata application",
+
+    googlePlay: {
+        link: "https://play.google.com/store/apps/details?id=com.paypointz.wallet&pcampaignid=web_share",
+        image: "assets/images/google-play.png",
+        alt: "Get it on Google Play"
+    },
+
+    appleStore: {
+        link: "https://apps.apple.com/in/app/digi-khata/id1194920306",
+        image: "assets/images/apple-store.png",
+        alt: "Download on the App Store"
+    }
+},
+
+
+
+
+
 
 
 
