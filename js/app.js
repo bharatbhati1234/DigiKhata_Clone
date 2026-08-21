@@ -1196,7 +1196,75 @@ async function renderexpenseManagementTransform() {
 
 
 
+// Navbar k under for business menu k under Cobrand-PrePaid Card page hai uska section hai -------------------------
 
+
+async function rendercobrandPrepaidCardHero() {
+
+    const source = await loadTemplate(
+        "templates/partials/cobrand-prepaidcard-hero.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+async function rendercobrandPrepaidCardSolutions() {
+
+    const source = await loadTemplate(
+        "templates/partials/cobrand-prepaidcard-solutions.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+async function rendercobrandPrepaidCardBenefits() {
+
+    const source = await loadTemplate(
+        "templates/partials/cobrand-prepaidcard-benefits.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
 
 
 
@@ -1364,10 +1432,30 @@ async function initApp() {
 
         await renderexpenseManagementBenefits();
 
+        await renderexpenseManagementTransform();
+
+
         await renderexpenseManagementForm();
 
-        await renderexpenseManagementTransform();
+
+
     }
+
+
+//  For Business menu k ander:-  Cobrand-PrePaid Card page --------------------------------------
+
+
+
+
+    else if(path.endsWith("cobrand-prepaidcard.html")){
+
+           await rendercobrandPrepaidCardHero();
+
+           await rendercobrandPrepaidCardSolutions();
+
+           await rendercobrandPrepaidCardBenefits();
+     }
+
 
 
 

@@ -1,0 +1,158 @@
+<section class="w-full py-16 md:py-20 block scroll-reveal">
+
+    <div class="max-w-7xl mx-auto px-5">
+
+        <!-- Section Heading -->
+        <div class="w-full lg:w-[700px] mx-auto text-center mb-12">
+
+            <h1 class="text-[32px] lg:text-[48px] font-[800] text-gray-900">
+                {{cobrandPrepaidCardSolutions.title}}
+            </h1>
+
+
+
+        </div>
+
+
+         {{!-- paragraph --}}
+
+
+        <div class="text-center max-w-4xl mx-auto">
+
+            <p class="mt-5  text-[16px] lg:ml-[140px] lg:mr-[140px] md:text-[18px] leading-7 text-[#4b4a4a]">
+                {{cobrandPrepaidCardSolutions.description1}}
+            </p>
+
+        </div>
+
+
+        <!-- UseCases Content -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 mt-10">
+
+              <!-- left Column -->
+            <div class="w-full md:w-5/12 px-4 md:px-3">
+
+                {{#each cobrandPrepaidCardSolutions.leftServices}}
+
+                <div class="mb-8 bg-[#F4F4F4] max-w-[348px] p-[25px] rounded-[15px]">
+
+                    <!-- Image -->
+                    <div class="w-full flex justify-start mb-5">
+
+                        <div class="w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] bg-white rounded-full flex items-center justify-center overflow-hidden">
+
+                            <img
+                                src="{{image}}"
+                                alt="{{imageAlt}}"
+                                class="w-[42px] h-[42px] object-contain"
+                            >
+
+                        </div>
+
+                    </div>
+
+                     <!-- Heading -->
+                    <h4 class="text-[20px] font-[600] font-unbounded text-gray-900 mb-3">
+                        {{heading}}
+                    </h4>
+
+                    
+                    <!-- Description -->
+                    <p class="text-start text-[16px] leading-6 text-gray-600">
+                        {{description}}
+                    </p>
+
+                </div>
+
+                {{/each}}
+
+            </div>
+
+
+            <!-- Middle Column -->
+            <div class="w-full lg:w-[348px] md:w-5/12 px-4 md:px-2 rounded-[15px]">
+
+                {{#each cobrandPrepaidCardSolutions.middleServices}}
+
+                <div class="mb-8 bg-[#F4F4F4] p-[25px] rounded-[15px]">
+
+                    <!-- Image -->
+                    <div class="w-full flex justify-start mb-5 ">
+
+                        <div class=" w-[60px] h-[60px] lg:w-[70px] lg:h-[70px]  bg-[white] rounded-full flex items-center justify-center overflow-hidden">
+
+                            <img
+                                src="{{image}}"
+                                alt="{{imageAlt}}"
+                              
+                                class="w-[42px] h-[42px] object-contain"
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <!-- Heading -->
+                    <h4 class="text-[20px] font-[600] font-unbounded text-gray-900 mb-3">
+                        {{heading}}
+                    </h4>
+
+
+                    <!-- Description -->
+                      <p class="text-start text-[16px] leading-6 text-gray-600">
+                        {{description}}
+                    </p>
+
+                </div>
+
+                {{/each}}
+
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="w-full md:w-5/12 px-4 md:px-3">
+
+                {{#each cobrandPrepaidCardSolutions.rightServices}}
+
+                <div class="mb-8 bg-[#F4F4F4] max-w-[348px] p-[25px] rounded-[15px]">
+
+                    <!-- Image -->
+                    <div class="w-full flex justify-start mb-5">
+
+                        <div class="w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] bg-white rounded-full flex items-center justify-center overflow-hidden">
+
+                            <img
+                                src="{{image}}"
+                                alt="{{imageAlt}}"
+                                class="w-[42px] h-[42px] object-contain"
+                            >
+
+                        </div>
+
+                    </div>
+
+                     <!-- Heading -->
+                    <h4 class="text-[20px] font-[600] font-unbounded text-gray-900 mb-3">
+                        {{heading}}
+                    </h4>
+
+
+
+                    <!-- Description -->
+                     <p class="text-start text-[16px] leading-6 text-gray-600">
+                        {{description}}
+                    </p>
+
+                </div>
+
+                {{/each}}
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

@@ -40,7 +40,7 @@ const siteData = {
                 },
                 {
                     name: "Cobrand Pre-paid Card",
-                    link: "/for-business/pfacobrand"
+                    link: "/cobrand-prepaidcard.html"
                 }
             ]
         },
@@ -1574,7 +1574,7 @@ giftCardForm: {
 
 
 
-    // Navbar k Under For Business k under Gift Card ka hai ----------------------------------------------
+    // Navbar k Under For Business k under expense management ka hai ----------------------------------------------
 
 
  expenseManagementHero: {
@@ -1691,6 +1691,11 @@ expenseManagementFeatures: {
     ]
 },
 
+
+
+
+
+
 expenseManagementBenefits: {
     title: "Experience the Future of Employee Benefits",
 
@@ -1724,6 +1729,30 @@ expenseManagementBenefits: {
         }
     ]
 },
+
+
+
+
+expenseManagementTransform: {
+    title: "Ready to Transform Your Expense Management?",
+
+    description:
+        "Join hundreds of businesses that trust DigiKhata for smart, compliant, and efficient expense management solutions.",
+
+    image: "assets/images/download_the_application.png",
+
+    imageAlt: "Download the Digi Khata application",
+
+    startbutton: {
+        buttonText: "Get Started Now",
+        link: "/product/instant-upi-account",
+        
+    },
+
+},
+
+
+
 
 
 
@@ -1793,29 +1822,118 @@ expenseManagementForm: {
 
 
 
+// Navbar k Under For Business k under Cobrand-prepaid Card ka hai ----------------------------------------------
 
-expenseManagementTransform: {
-    title: "One app for all your financial needs",
 
-    description:
-        "Download our mobile application now and discover the power of accessing all your payments needs in one place.",
+ cobrandPrepaidCardHero: {
 
-    image: "assets/images/download_the_application.png",
+        title: "Enhance Your DigiKhata Experience with Cobranded Pre-paid Cards",
 
-    imageAlt: "Download the Digi Khata application",
+        description1:
+            "Offer customized pre-paid cards with your branding to provide seamless digital payments for your customers and streamline your business operations.",
+        
+        image: "assets/images/GiftCard.png",
 
-    googlePlay: {
-        link: "https://play.google.com/store/apps/details?id=com.paypointz.wallet&pcampaignid=web_share",
-        image: "assets/images/google-play.png",
-        alt: "Get it on Google Play"
+        imageAlt: "gift card image",
+
+        imageLeft: true,
+
+       
+        buttonText: "Get Started Now",
+
     },
 
-    appleStore: {
-        link: "https://apps.apple.com/in/app/digi-khata/id1194920306",
-        image: "assets/images/apple-store.png",
-        alt: "Download on the App Store"
-    }
+
+
+
+
+cobrandPrepaidCardSolutions: {
+
+    title: "Why Choose Our Pre-paid Card Solution",
+
+    description1:
+            "Powerful features designed for businesses like yours",
+        
+
+    leftServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"Custom Branding",
+            description:
+                "Issue pre-paid cards with your logo and branding to strengthen your brand identity and customer loyalty."
+        },
+     
+
+      
+    ],
+
+    middleServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            heading:"Secure Payments",
+            description:
+                "Our platform ensures secure and reliable transactions with fraud protection."
+        },
+
+           {
+            image: "assets/images/free_account.png",
+            imageAlt: "Financial services",
+            heading:"Quick Setup",
+            description:
+                "Get started quickly with our streamlined onboarding process and API integration."
+        },
+
+       
+
+    ],
+
+    rightServices: [
+        {
+            image: "assets/images/free_account.png",
+            imageAlt: "KYC verification",
+            heading:"Growth Focused",
+            description:
+                "Scalable solutions that grow with your business and customer base."
+        },
+
+        
+
+    ]
+
 },
+
+
+
+
+
+
+
+cobrandPrepaidCardBenefits: {
+    title: "Benefits for Your Business",
+
+    description:
+        "How our pre-paid solutions can transform your operations",
+
+    cards: [
+        {
+            title: "Customer Loyalty",
+            description:
+                "Enhance customer retention by offering branded payment solutions that keep your business top of mind.",
+            icon: "assets/images/wallet.png",
+            iconAlt: "Bank Icon"
+        },
+        {
+            title: "Financial Inclusion",
+            description:
+                "Reach customers without bank accounts by providing accessible digital payment options.",
+            icon: "assets/images/wallet.png",
+            iconAlt: "Access Icon"
+        }
+    ]
+},
+
 
 
 
