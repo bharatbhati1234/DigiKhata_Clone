@@ -1,0 +1,122 @@
+<section class="w-full py-16 md:py-20 lg:py-24 bg-white overflow-hidden">
+
+    <!-- Section Heading -->
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <div class="max-w-4xl mx-auto text-center mb-12 md:mb-16">
+
+            <h1 class="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[52px] 
+                       leading-[1.15] font-[800] text-[#416BFA]">
+                {{instantUpiFeatures.title}}
+            </h1>
+
+        </div>
+
+
+        <!-- Feature 1 -->
+        <div class="flex flex-col lg:flex-row items-center justify-center 
+                    gap-10 lg:gap-20 py-8 md:py-12">
+
+            <!-- Text -->
+            <div class="w-full lg:w-[40%] order-2 lg:order-1 text-center lg:text-left">
+
+                <h3 class="text-[30px] sm:text-[36px] md:text-[40px] 
+                           leading-tight font-[700] text-black mb-4">
+                    {{instantUpiFeatures.features.[0].title}}
+                </h3>
+
+                <p class="text-[16px] md:text-[18px] leading-7 text-[#555]">
+                    {{instantUpiFeatures.features.[0].description}}
+                </p>
+
+            </div>
+
+
+            <!-- Image -->
+            <div class="w-full lg:w-[40%] order-1 lg:order-2 
+                        flex justify-center">
+
+                <img
+                    src="{{instantUpiFeatures.features.[0].image}}"
+                    alt="{{instantUpiFeatures.features.[0].alt}}"
+                    class="w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] 
+                           h-auto object-contain"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- Feature 2 -->
+        <div class="flex flex-col lg:flex-row items-center justify-center 
+                    gap-10 lg:gap-20 py-8 md:py-12">
+
+            <!-- Image -->
+            <div class="w-full lg:w-[40%] order-1 
+                        flex justify-center">
+
+                <img
+                    src="{{instantUpiFeatures.features.[1].image}}"
+                    alt="{{instantUpiFeatures.features.[1].alt}}"
+                    class="w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] 
+                           h-auto object-contain"
+                >
+
+            </div>
+
+
+            <!-- Text -->
+            <div class="w-full lg:w-[40%] order-2 text-center lg:text-left">
+
+                <h3 class="text-[30px] sm:text-[36px] md:text-[40px] 
+                           leading-tight font-[700] text-black mb-4">
+                    {{instantUpiFeatures.features.[1].title}}
+                </h3>
+
+                <p class="text-[16px] md:text-[18px] leading-7 text-[#555]">
+                    {{instantUpiFeatures.features.[1].description}}
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Feature 3 -->
+        <div class="flex flex-col lg:flex-row items-center justify-center 
+                    gap-10 lg:gap-20 py-8 md:py-12">
+
+            <!-- Text -->
+            <div class="w-full lg:w-[40%] order-2 lg:order-1 text-center lg:text-left">
+
+                <h3 class="text-[30px] sm:text-[36px] md:text-[40px] 
+                           leading-tight font-[700] text-black mb-4">
+                    {{instantUpiFeatures.features.[2].title}}
+                </h3>
+
+                <p class="text-[16px] md:text-[18px] leading-7 text-[#555]">
+                    {{instantUpiFeatures.features.[2].description}}
+                </p>
+
+            </div>
+
+
+            <!-- Image -->
+            <div class="w-full lg:w-[40%] order-1 lg:order-2 
+                        flex justify-center">
+
+                <img
+                    src="{{instantUpiFeatures.features.[2].image}}"
+                    alt="{{instantUpiFeatures.features.[2].alt}}"
+                    class="w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] 
+                           h-auto object-contain"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

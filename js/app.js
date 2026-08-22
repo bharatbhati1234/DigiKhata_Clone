@@ -1270,7 +1270,206 @@ async function rendercobrandPrepaidCardBenefits() {
 
 
 
+async function rendercobrandPrepaidCardForm() {
 
+    const source = await loadTemplate(
+        "templates/partials/cobrand-prepaidcard-form.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+// Navbar k under for individuals menu k under instant upi account page hai uska section hai -------------------------
+
+
+async function renderinstantUPIHero() {
+
+    const source = await loadTemplate(
+        "templates/partials/instant-upi-hero.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+
+async function renderinstantUPIFeatures() {
+
+    const source = await loadTemplate(
+        "templates/partials/instant-upi-features.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+async function renderinstantUPIstayAhead() {
+
+    const source = await loadTemplate(
+        "templates/partials/instant-upi-stayAhead.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+
+
+
+
+// Navbar k under for individuals menu k under instant Rupay Card page hai uska section hai -------------------------
+
+
+async function renderinstantRupayCardHero() {
+
+    const source = await loadTemplate(
+        "templates/partials/instant-rupaycard-hero.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+async function renderinstantRupayCardTransactions() {
+
+    const source = await loadTemplate(
+        "templates/partials/instant-rupaycard-transactions.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+async function renderinstantRupayCardstayAhead() {
+
+    const source = await loadTemplate(
+        "templates/partials/instant-rupaycard-stayAhead.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+
+// Navbar k under for individuals menu k under Multilingual Mobile App page hai uska section hai -------------------------
+
+
+async function rendermultlingualMobileHero() {
+
+    const source = await loadTemplate(
+        "templates/partials/multilingual-mobile-hero.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
 
 
 
@@ -1360,6 +1559,7 @@ async function initApp() {
         await renderDigiKhataUPISolutions();
 
         await renderDigiKhataUPIForm();
+
 
         
 
@@ -1454,7 +1654,50 @@ async function initApp() {
            await rendercobrandPrepaidCardSolutions();
 
            await rendercobrandPrepaidCardBenefits();
+
+           await rendercobrandPrepaidCardForm();
      }
+
+
+
+//  For Indivisuals menu k ander:-  instant-upi Card page --------------------------------------
+
+
+    else if(path.endsWith("instant-upi.html")){
+         
+          await renderinstantUPIHero();
+
+          await renderinstantUPIFeatures();
+
+         await renderinstantUPIstayAhead();
+
+    }
+
+
+
+//  For Indivisuals menu k ander:-  instant-rupay Card page --------------------------------------
+
+
+
+
+    else if(path.endsWith("instant-rupaycard.html")){
+
+        await renderinstantRupayCardHero();
+
+        await renderinstantRupayCardTransactions();
+
+        await renderinstantRupayCardstayAhead();
+
+
+    }
+
+
+
+
+    else if(path.endsWith("multilingual-mobile.html")){
+
+        await rendermultlingualMobileHero();
+    }
 
 
 

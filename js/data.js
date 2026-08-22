@@ -51,15 +51,15 @@ const siteData = {
             items: [
                 {
                     name: "Instant UPI account",
-                    link: "/product/instant-upi-account"
+                    link: "/instant-upi.html"
                 },
                 {
                     name: "Instant Rupay Card",
-                    link: "/product/prepaid-card"
+                    link: "/instant-rupaycard.html"
                 },
                 {
                     name: "Multilingual Mobile App",
-                    link: "/product/mobile-app"
+                    link: "/multilingual-mobile.html"
                 },
                 {
                     name: "DigiKhata Metro Card",
@@ -1940,7 +1940,290 @@ cobrandPrepaidCardBenefits: {
 
 
 
+cobrandPrepaidCardForm: {
+        title: "Get In Touch",
 
+        description1:
+                "Request a demo or more information about our pre-paid card solutions.",
+
+        formSource: "upipg",
+
+        submitText: "Submit Request",
+
+        fields: {
+            name: {
+                label: "Full Name"
+            },
+
+            company: {
+                label: "Business Name"
+            },
+
+            email: {
+                label: "Email Address"
+            },
+
+            phone: {
+                label: "Phone Number"
+            },
+
+            business: {
+                label: "Business Type",
+
+                placeholder: "Select your business type",
+
+                options: [
+                    {
+                        value: "ecommerce",
+                        label: "E-commerce"
+                    },
+                    {
+                        value: "retail",
+                        label: "Retail"
+                    },
+                    {
+                        value: "services",
+                        label: "Services"
+                    },
+                    {
+                        value: "education",
+                        label: "Education"
+                    },
+                    {
+                        value: "other",
+                        label: "Other"
+                    }
+                ]
+            },
+
+            message: {
+                label: "Additional Requirements"
+            }
+        }
+    },
+
+
+
+
+// Navbar k Under For Individuals k under Instant UPI Account ka hai ----------------------------------------------
+
+
+
+instantUpiHero: {
+
+    label: "Offering",
+
+    title: "Join the UPI Revolution: Create Instant Pre-paid Account with UPI, Get UPI ID Online",
+
+    description: "Embrace the future of payments with instant upi account opening. Join the UPI revolution from India to the world!",
+
+    backgroundText: "UPI",
+
+    mobileTitle: "Get your<br>instant mobile<br>application",
+
+    image: "assets/images/upi_website_image.png",
+
+    imageAlt: "Create UPI ID Online",
+
+    bottomTitle: "Create UPI ID Online",
+
+    bottomDescription: "Welcome to the future of payments, where simplicity meets versatility. Our UPI platform revolutionizes the way you transfer fund, pay bills, and shop online. Say goodbye to cumbersome bank transfers and endless forms. With our UPI solution, everything you need is right at your fingertips. It's not just a payment system; it's your gateway to effortless financial transactions, empowering you to manage your money with ease and security."
+},
+
+
+
+
+
+instantUpiFeatures: {
+
+    title: "Become a part of India’s fintech progress",
+
+    features: [
+        {
+            title: "Scan any UPI QRs",
+            description:
+                "Scan any UPI QR to make payments to any one across India. Pay merchant, businesses, restaurants, petrol pumps, on websites, apps, etc.",
+            image: "assets/images/Mobile1.png",
+            alt: "Scan any UPI QR"
+        },
+
+        {
+            title: "Get your UPI",
+            description:
+                "Create your UPI handle like mobileno@digikhata. Send and receive money to and from your UPI handle across India.",
+            image: "assets/images/Mobile2.png",
+            alt: "Get your UPI"
+        },
+
+        {
+            title: "Share your QR",
+            description:
+                "Share your QR to receive payments from anyone using UPI in real-time.",
+            image: "assets/images/Mobile3.png",
+            alt: "Share your QR"
+        }
+    ]
+},
+
+
+
+
+
+
+instantUpistayAhead: {
+
+    subtitle: "Stay ahead",
+
+    title: "The latest payment features in your hand",
+
+    leftFeatures: [
+        {
+            icon: "assets/images/free_account.png",
+            iconAlt: "Manage UPI handle",
+            title: "Manage <br>UPI handle",
+            description:
+                "Create a personalised UPI handle, enable and disable your UPI handle it from the mobile app."
+        },
+        {
+            icon: "assets/images/free_account.png",
+            iconAlt: "Safe and secure",
+            title: "Safe<br>and secure",
+            description:
+                "No banking linking or banking PIN required. Keep your main bank account safeguarded at all times."
+        }
+    ],
+
+    rightFeatures: [
+        {
+            icon: "assets/images/free_account.png",
+            iconAlt: "Set spending limits",
+            title: "Set spending<br>limits",
+            description:
+                "Monitor your expenses or set limit for all transactions and payments on the APP"
+        }
+    ]
+},
+
+
+
+
+
+
+
+// Navbar k Under For Individuals k under Instant Rupay Card ka hai ----------------------------------------------
+
+
+
+
+instantRupayCardHero: {
+
+    label: "Offering",
+
+    title: "A Rupay Card that you can tap, swipe & manage on your phone",
+
+    image: "assets/images/PrepaidCard_Banner.png",
+
+    imageAlt: "DigiKhata Rupay Prepaid Card",
+
+    description:
+        "Get ready for a payment experience that combines convenience with security. Our pre-paid card is designed to seamlessly integrate into your life, catering to your payment needs at every step. It's more than just a pre-paid card; it's your financial tool that empowers you to take control of your money."
+},
+
+
+
+
+
+
+instantRupayCardTransactions: [
+    {
+        title: "A personalized UPI handle & QR",
+        description: "Get your UPI Khata in 2 minutes. Scan and Pay merchants and businesses, and your friends alike. Pay bills, Recharge, fuel, all of it on Digi Khata.",
+        buttonText: "Explore more",
+        link: "/product/instant-upi-account",
+        image: "assets/images/upi-website-image.png",
+        imageAlt: "instant upi account",
+        reverse: false
+    },
+
+    {
+        title: "Secure Rupay Card with tap & pay",
+        description: "The Digi Khata RuPay card is your welcome to convenience. Works everywhere with a tap, swipe and chip! Tap and pay to skip the queue at metro stations, travel ticketless!",
+        buttonText: "Explore more",
+        link: "/product/prepaid-card",
+        image: "assets/images/Home-PrepaidCard.png",
+        imageAlt: "Secure Rupay Card",
+        reverse: true
+    },
+
+    {
+        title: "Simple and easy to use Multilingual App",
+        description: "In a sea of complex, cluttered UPI apps, DigiKhata is simple, multi-lingual, intuitive and secure. Switch your card and UPI on|off from your app.",
+        buttonText: "Explore more",
+        link: "/product/mobile-app",
+        image: "assets/images/Home-MobileApplication.png",
+        imageAlt: "DigiKhata mobile application",
+        reverse: false
+    }
+],
+
+
+
+
+instantRupayCardstayAhead: {
+    label: "Stay ahead",
+
+    title: "The latest payment features in your hand",
+
+    items: [
+        {
+            title: "Manage Cards",
+            description:
+                "Easily organize and control your pre-paid cards, tailoring them to your preferences and needs.",
+            image: "assets/images/free_account.png",
+            imageAlt: "Manage Cards",
+            delay: ".2s"
+        },
+        {
+            title: "Reset Card Pin",
+            description:
+                "Securely reset your pre-paid card PIN for enhanced transaction protection and peace of mind.",
+            image: "assets/images/free_account.png",
+            imageAlt: "Reset Card PIN",
+            delay: ".3s"
+        },
+        {
+            title: "Manage Usage",
+            description:
+                "Monitor and adjust pre-paid card usage to align with your financial goals effortlessly.",
+            image: "assets/images/free_account.png",
+            imageAlt: "Manage Usage",
+            delay: ".4s"
+        }
+    ]
+},
+
+
+
+
+
+// Navbar k Under For Individuals k under Multilingual Mobile App ka hai ----------------------------------------------
+
+
+
+
+multilingualMobileHero: {
+
+    label: "Offering",
+
+    title: "A Rupay Card that you can tap, swipe & manage on your phone",
+
+    image: "assets/images/PrepaidCard_Banner.png",
+
+    imageAlt: "DigiKhata Rupay Prepaid Card",
+
+    description:
+        "Get ready for a payment experience that combines convenience with security. Our pre-paid card is designed to seamlessly integrate into your life, catering to your payment needs at every step. It's more than just a pre-paid card; it's your financial tool that empowers you to take control of your money."
+},
 
 
 

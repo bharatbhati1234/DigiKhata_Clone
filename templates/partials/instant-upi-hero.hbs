@@ -1,0 +1,158 @@
+<section class="w-full py-12 md:py-16 lg:py-20 block scroll-reveal overflow-hidden">
+
+    <!-- Top Heading -->
+    <div class="max-w-7xl mx-auto px-5">
+
+        <div class="text-center max-w-5xl mx-auto">
+
+            <h5 class="text-[18px] md:text-[20px] font-medium text-gray-800 mb-3">
+                {{instantUpiHero.label}}
+            </h5>
+
+            <h1
+                class="
+                    text-[30px]
+                    sm:text-[38px]
+                    md:text-[48px]
+                    lg:text-[56px]
+                    font-[700]
+                    leading-tight
+                    text-gray-900
+                "
+            >
+                {{instantUpiHero.title}}
+            </h1>
+
+            <p
+                class="
+                    mt-5
+                    text-[16px]
+                    md:text-[18px]
+                    leading-7
+                    text-gray-600
+                    max-w-4xl
+                    mx-auto
+                "
+            >
+                {{instantUpiHero.description}}
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Image Section -->
+    <div
+        class="
+            relative
+            w-full
+            max-w-6xl
+            mx-auto
+            mt-10
+            md:mt-14
+            px-5
+        "
+    >
+
+        <!-- Background Text -->
+        <div
+            class="
+                absolute
+                inset-0
+                flex
+                items-center
+                justify-center
+                pointer-events-none
+                z-0
+            "
+        >
+
+            <h2
+                class="
+                    text-center
+                    text-[42px]
+                    sm:text-[65px]
+                    md:text-[100px]
+                    lg:text-[145px]
+                    xl:text-[175px]
+                    font-[800]
+                    leading-none
+                    text-[#F1F1F1]
+                    whitespace-nowrap
+                "
+            >
+                Get your<br class="md:hidden">
+                <span class="hidden md:inline">Get your </span>
+                instant mobile application
+            </h2>
+
+        </div>
+
+
+        <!-- Main Image -->
+        <div
+            class="
+                relative
+                z-10
+                flex
+                justify-center
+                items-center
+            "
+        >
+
+            <img
+                src="{{instantUpiHero.image}}"
+                alt="{{instantUpiHero.imageAlt}}"
+                class="
+                    w-full
+                    max-w-[280px]
+                    sm:max-w-[340px]
+                    md:max-w-[430px]
+                    lg:max-w-[520px]
+                    h-auto
+                    object-contain
+                "
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Content -->
+    <div class="max-w-5xl mx-auto px-5 mt-8 md:mt-12">
+
+        <div class="text-center">
+
+            <h2
+                class="
+                    text-[28px]
+                    sm:text-[34px]
+                    md:text-[42px]
+                    lg:text-[46px]
+                    font-[700]
+                    leading-tight
+                    text-gray-900
+                "
+            >
+                {{instantUpiHero.bottomTitle}}
+            </h2>
+
+            <p
+                class="
+                    mt-5
+                    text-[16px]
+                    md:text-[18px]
+                    leading-7
+                    text-gray-600
+                "
+            >
+                {{instantUpiHero.bottomDescription}}
+            </p>
+
+        </div>
+
+    </div>
+
+</section>

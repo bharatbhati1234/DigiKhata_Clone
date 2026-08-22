@@ -1,0 +1,135 @@
+<section class="w-full py-16 md:py-20 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+
+            <h5
+                class="text-[14px] md:text-[16px] font-medium text-black mb-3 wow fadeInDown"
+                data-wow-delay=".8s"
+            >
+                {{instantUpistayAhead.subtitle}}
+            </h5>
+
+            <h1
+                class="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[52px]
+                       leading-[1.15] font-[700] text-[#416BFA]
+                       wow fadeInUp"
+                data-wow-delay=".3s"
+            >
+                {{instantUpistayAhead.title}}
+            </h1>
+
+        </div>
+
+
+        <!-- Features -->
+        <div class="max-w-5xl mx-auto">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-start">
+
+                <!-- Left Column -->
+                <div class="space-y-10">
+
+                    {{#each instantUpistayAhead.leftFeatures}}
+
+                    <div
+                        class="flex flex-col sm:flex-row items-center sm:items-start
+                               text-center sm:text-left gap-5
+                               wow zoomIn"
+                    >
+
+                        <!-- Icon -->
+                        <div
+                            class="flex-shrink-0 w-[80px] h-[80px]
+                                   rounded-full bg-[#f1f4ff]
+                                   flex items-center justify-center"
+                        >
+                            <img
+                                src="{{icon}}"
+                                alt="{{iconAlt}}"
+                                class="w-[45px] h-[45px] object-contain"
+                            >
+                        </div>
+
+                        <!-- Content -->
+                        <div>
+
+                            <h3
+                                class="text-[22px] md:text-[24px]
+                                       font-[700] leading-tight text-black mb-3"
+                            >
+                                {{{title}}}
+                            </h3>
+
+                            <p
+                                class="text-[15px] md:text-[16px]
+                                       leading-7 text-gray-600"
+                            >
+                                {{description}}
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    {{/each}}
+
+                </div>
+
+
+                <!-- Right Column -->
+                <div class="space-y-10">
+
+                    {{#each instantUpistayAhead.rightFeatures}}
+
+                    <div
+                        class="flex flex-col sm:flex-row items-center sm:items-start
+                               text-center sm:text-left gap-5
+                               wow zoomIn"
+                    >
+
+                        <!-- Icon -->
+                        <div
+                            class="flex-shrink-0 w-[80px] h-[80px]
+                                   rounded-full bg-[#f1f4ff]
+                                   flex items-center justify-center"
+                        >
+                            <img
+                                src="{{icon}}"
+                                alt="{{iconAlt}}"
+                                class="w-[45px] h-[45px] object-contain"
+                            >
+                        </div>
+
+                        <!-- Content -->
+                        <div>
+
+                            <h3
+                                class="text-[22px] md:text-[24px]
+                                       font-[700] leading-tight text-black mb-3"
+                            >
+                                {{{title}}}
+                            </h3>
+
+                            <p
+                                class="text-[15px] md:text-[16px]
+                                       leading-7 text-gray-600"
+                            >
+                                {{description}}
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    {{/each}}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
