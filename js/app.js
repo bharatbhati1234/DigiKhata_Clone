@@ -1472,6 +1472,105 @@ async function rendermultlingualMobileHero() {
 }
 
 
+async function rendermultlingualMobileFeatures() {
+
+    const source = await loadTemplate(
+        "templates/partials/multilingual-mobile-features.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+async function rendermultlingualMobileStayAhead() {
+
+    const source = await loadTemplate(
+        "templates/partials/multilingual-mobile-stayAhead.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+// Navbar k under for individuals menu k under Multilingual Mobile App page hai uska section hai -------------------------
+
+
+async function renderdigikhataMetroCardHero() {
+
+    const source = await loadTemplate(
+        "templates/partials/digikhata-metrocard-hero.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
+
+
+
+
+
+async function renderdigikhataMetroCardStayAhead() {
+
+    const source = await loadTemplate(
+        "templates/partials/digikhata-metrocard-stayAhead.hbs"
+    );
+
+    const template =
+        Handlebars.compile(source);
+
+    const html =
+        template(siteData);
+
+    document
+        .getElementById("app")
+        .insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+}
+
+
 
 
 async function initApp() {
@@ -1692,11 +1791,31 @@ async function initApp() {
     }
 
 
+//  For Indivisuals menu k ander:-  multilingual mobile app  page --------------------------------------
 
 
     else if(path.endsWith("multilingual-mobile.html")){
 
         await rendermultlingualMobileHero();
+
+        await rendermultlingualMobileFeatures();
+
+        await rendermultlingualMobileStayAhead();
+    }
+
+
+
+
+
+//  For Indivisuals menu k ander:-  digikhata metro card page --------------------------------------
+
+
+
+    else if(path.endsWith("digikhata-metrocard.html")){
+
+        await renderdigikhataMetroCardHero();
+
+        await renderdigikhataMetroCardStayAhead();
     }
 
 

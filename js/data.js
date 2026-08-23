@@ -63,7 +63,7 @@ const siteData = {
                 },
                 {
                     name: "DigiKhata Metro Card",
-                    link: "/product/digikhata-metro-card"
+                    link: "/digikhata-metrocard.html"
                 }
             ]
         },
@@ -2223,6 +2223,234 @@ multilingualMobileHero: {
 
     description:
         "Get ready for a payment experience that combines convenience with security. Our pre-paid card is designed to seamlessly integrate into your life, catering to your payment needs at every step. It's more than just a pre-paid card; it's your financial tool that empowers you to take control of your money."
+},
+
+
+
+
+
+
+
+
+multilingualMobileFeatures: {
+
+    title: "Features of Using Mobile Application for Payment Services",
+
+    items: [
+
+        {
+            title: "Digital Passbook",
+
+            description:
+                "Manage your finances right from your pocket with our interactive digital passbook. It provides real-time updates on transactions and balances, empowering you to manage your money on the go.",
+
+            image: "assets/images/Mobile1.png",
+
+            imageAlt: "Digital Passbook",
+
+            reverse: false
+        },
+
+        {
+            title: "Virtual Card",
+
+            description:
+                "Enjoy the convenience of digital payments with our secure virtual card. This encrypted digital key paves the way for easy online and in-store purchases, ensuring comfort and unmatched security.",
+
+            image: "assets/images/Mobile2.png",
+
+            imageAlt: "Virtual Card",
+
+            reverse: true
+        },
+
+        {
+            title: "Seamless Tracking",
+
+            description:
+                "Stay ahead of the curve with our advanced real-time tracking feature. Gain comprehensive and transparent financial insights, empowering you to make informed decisions for a robust financial life.",
+
+            image: "assets/images/Mobile3.png",
+
+            imageAlt: "Seamless Tracking",
+
+            reverse: false
+        },
+
+        {
+            title: "Automated Reports",
+
+            description:
+                "Navigate your finances confidently with our automated reports. These detailed and insightful activity reports provide the data you need to strategize your financial decisions effectively.",
+
+            image: "assets/images/Mobile4.png",
+
+            imageAlt: "Automated Reports",
+
+            reverse: true
+        },
+
+        {
+            title: "Push Notifications",
+
+            description:
+                "Stay updated with our instant transaction notifications. Our real-time push notifications ensure you're always promptly informed and up-to-date about every activity in your account.",
+
+            image: "assets/images/Mobile5.png",
+
+            imageAlt: "Push Notifications",
+
+            reverse: false
+        }
+
+    ]
+},
+
+
+
+
+multilingualMobileStayAhead: {
+
+    label: "Stay ahead",
+
+    title: "The latest payment features in your hand",
+
+    items: [
+
+        [
+            {
+                title: "Manage Expenses",
+                description:
+                    "Effortlessly track expenses, gain control, and plan your budget with ease.",
+                image: "assets/images/free_account.png",
+                imageAlt: "Manage Expenses"
+            }
+        ],
+
+        [
+            {
+                title: "Seamless Tracking",
+                description:
+                    "Real-time monitoring for transparent and clear financial insights.",
+                image: "assets/images/free_account.png",
+                imageAlt: "Seamless Tracking"
+            },
+
+            {
+                title: "Automated Reports",
+                description:
+                    "Make data-driven decisions with comprehensive financial activity reports.",
+                image: "assets/images/free_account.png",
+                imageAlt: "Automated Reports"
+            }
+        ],
+
+        [
+            {
+                title: "Real-time Spend Breakdowns",
+                description:
+                    "Gain real-time insights into spending with detailed breakdowns.",
+                image: "assets/images/free_account.png",
+                imageAlt: "Real-time Spend Breakdowns"
+            },
+
+            {
+                title: "Instant Onboarding",
+                description:
+                    "Our streamlined onboarding process ensures you can access our services in no time.",
+                image: "assets/images/free_account.png",
+                imageAlt: "Instant Onboarding"
+            }
+        ]
+
+    ]
+},
+
+
+
+
+// Navbar k Under For Individuals k under DigiKhata Metro Card ka hai ----------------------------------------------
+
+
+
+
+digikhataMetroCardHero: {
+
+    label: "Offering",
+
+    title: "A Rupay Card that you can tap, swipe & manage on your phone",
+
+    image: "assets/images/PrepaidCard_Banner.png",
+
+    imageAlt: "DigiKhata Rupay Prepaid Card",
+
+    description:
+        "Get ready for a payment experience that combines convenience with security. Our pre-paid card is designed to seamlessly integrate into your life, catering to your payment needs at every step. It's more than just a pre-paid card; it's your financial tool that empowers you to take control of your money."
+},
+
+
+
+
+
+digikhataMetroCardStayAhead: {
+
+    label: "Stay ahead",
+
+    title: "Unlock Effortless Travel with DigiKhata Metro Card | Fast, Convenient, and Secure.",
+
+    items: [
+
+        [
+            {
+                title: "1. Activation of NCMC",
+
+                description:
+                    "Visit the Metro counter and request activation of NCMC (first-time only).",
+
+                image: "assets/images/free_account.png",
+
+                imageAlt: "NCMC Activation"
+            }
+        ],
+
+        [
+            {
+                title: "2. Add funds",
+
+                description:
+                    "Use the Digi Khata app to add funds to your NCMC card.",
+
+                image: "assets/images/free_account.png",
+
+                imageAlt: "Add Funds"
+            },
+
+            {
+                title: "3. Update Balance",
+
+                description:
+                    "Tap your card on the Balance Update Machine to sync the balance.",
+
+                image: "assets/images/free_account.png",
+
+                imageAlt: "Update Balance"
+            }
+        ],
+
+        [
+            {
+                title: "4. Ready to go",
+
+                description:
+                    "Your card is now ready for use.",
+
+                image: "assets/images/free_account.png",
+
+                imageAlt: "Metro Card Ready"
+            }
+        ]
+
+    ]
 },
 
 

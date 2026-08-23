@@ -1,0 +1,133 @@
+<section class="w-full py-12 sm:py-16 lg:py-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="w-full md:w-7/12 mx-auto text-center mb-10 md:mb-14">
+
+            <h5
+                class="text-sm md:text-base font-semibold text-gray-700 mb-3 wow fadeInDown"
+                data-wow-delay=".8s"
+            >
+                {{multilingualMobileStayAhead.label}}
+            </h5>
+
+            <h1
+                class="text-3xl sm:text-4xl md:text-5xl lg:text-[48px]
+                       font-bold leading-tight text-gray-900 wow fadeInUp"
+                data-wow-delay=".3s"
+            >
+                {{multilingualMobileStayAhead.title}}
+            </h1>
+
+        </div>
+
+
+        <!-- Features Grid -->
+        <div
+            class="
+                grid
+                grid-cols-1
+                md:grid-cols-3
+                gap-6
+                lg:gap-8
+                max-w-6xl
+                mx-auto
+                items-start
+            "
+        >
+
+            {{#each multilingualMobileStayAhead.items}}
+
+            <div class="flex flex-col gap-6">
+
+                {{#each this}}
+
+                <div
+                    class="
+                        text-center
+                        rounded-2xl
+                        px-5
+                        sm:px-6
+                        py-7
+                        sm:py-8
+                        bg-white
+                        transition-all
+                        duration-300
+                        hover:-translate-y-2
+                        hover:shadow-xl
+                        wow zoomIn
+                    "
+                    data-wow-delay=".2s"
+                >
+
+                    <!-- Icon -->
+                    <div class="flex justify-center mb-5">
+
+                        <div
+                            class="
+                                w-20 h-20
+                                sm:w-24 sm:h-24
+                                rounded-full
+                                bg-[#f1f4ff]
+                                flex
+                                items-center
+                                justify-center
+                            "
+                        >
+
+                            <img
+                                src="{{image}}"
+                                alt="{{imageAlt}}"
+                                class="
+                                    w-10 h-10
+                                    sm:w-12 sm:h-12
+                                    object-contain
+                                "
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Title -->
+                    <h3
+                        class="
+                            text-2xl
+                            sm:text-3xl
+                            font-bold
+                            text-gray-900
+                            leading-tight
+                            mb-4
+                        "
+                    >
+                        {{title}}
+                    </h3>
+
+
+                    <!-- Description -->
+                    <p
+                        class="
+                            text-sm
+                            sm:text-base
+                            leading-7
+                            text-gray-600
+                            max-w-sm
+                            mx-auto
+                        "
+                    >
+                        {{description}}
+                    </p>
+
+                </div>
+
+                {{/each}}
+
+            </div>
+
+            {{/each}}
+
+        </div>
+
+    </div>
+</section>
