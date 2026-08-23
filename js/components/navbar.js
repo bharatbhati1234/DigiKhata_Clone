@@ -1,50 +1,59 @@
 function initNavbar() {
 
     // =====================================
-    // Desktop Dropdown
+    // Desktop Dropdown - Hover
     // =====================================
 
-    const dropdownButtons =
-        document.querySelectorAll(".dropdown-toggle");
+    const navItems = document.querySelectorAll(".nav-item");
+
+    navItems.forEach((item) => {
+
+        const button = item.querySelector(".dropdown-toggle");
+        const dropdown = item.querySelector(".dropdown-menu");
+        const arrow = item.querySelector(".dropdown-arrow");
+
+        if (!button || !dropdown) return;
 
 
-    dropdownButtons.forEach((button) => {
+        // Mouse enter -> Open dropdown
+        item.addEventListener("mouseenter", () => {
 
-        button.addEventListener("click", (event) => {
+            // Close all other dropdowns
+            document.querySelectorAll(".dropdown-menu").forEach((menu) => {
 
-            event.stopPropagation();
+                if (menu !== dropdown) {
+                    menu.classList.add("hidden");
+                }
 
-            const dropdown =
-                button.nextElementSibling;
+            });
 
-            const arrow =
-                button.querySelector(".dropdown-arrow");
+            // Reset all other arrows
+            document.querySelectorAll(".dropdown-arrow").forEach((otherArrow) => {
 
+                if (otherArrow !== arrow) {
+                    otherArrow.classList.remove("rotate-180");
+                }
 
-            // Close other dropdowns
-
-            document
-                .querySelectorAll(".dropdown-menu")
-                .forEach((menu) => {
-
-                    if (menu !== dropdown) {
-                        menu.classList.add("hidden");
-                    }
-
-                });
+            });
 
 
-            // Toggle current dropdown
-
-            dropdown.classList.toggle("hidden");
-
+            // Open current dropdown
+            dropdown.classList.remove("hidden");
 
             if (arrow) {
+                arrow.classList.add("rotate-180");
+            }
 
-                arrow.classList.toggle(
-                    "rotate-180"
-                );
+        });
 
+
+        // Mouse leave -> Close dropdown
+        item.addEventListener("mouseleave", () => {
+
+            dropdown.classList.add("hidden");
+
+            if (arrow) {
+                arrow.classList.remove("rotate-180");
             }
 
         });
@@ -52,47 +61,36 @@ function initNavbar() {
     });
 
 
+
     // =====================================
     // Mobile Menu
     // =====================================
 
     const mobileButton =
-        document.getElementById(
-            "mobile-menu-button"
-        );
+        document.getElementById("mobile-menu-button");
 
     const mobileMenu =
-        document.getElementById(
-            "mobile-menu"
-        );
+        document.getElementById("mobile-menu");
 
 
     if (mobileButton && mobileMenu) {
 
-        mobileButton.addEventListener(
-            "click",
-            () => {
+        mobileButton.addEventListener("click", () => {
 
-                mobileMenu.classList.toggle(
-                    "hidden"
-                );
+            mobileMenu.classList.toggle("hidden");
 
+            const isOpen =
+                !mobileMenu.classList.contains("hidden");
 
-                const isOpen =
-                    !mobileMenu.classList.contains(
-                        "hidden"
-                    );
+            mobileButton.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
 
-
-                mobileButton.setAttribute(
-                    "aria-expanded",
-                    isOpen
-                );
-
-            }
-        );
+        });
 
     }
+
 
 
     // =====================================
@@ -112,42 +110,12 @@ function initNavbar() {
             const dropdown =
                 button.nextElementSibling;
 
-
-            dropdown.classList.toggle(
-                "hidden"
-            );
+            dropdown.classList.toggle("hidden");
 
         });
 
     });
 
-
-    // =====================================
-    // Close dropdown outside
-    // =====================================
-
-    document.addEventListener("click", () => {
-
-        document
-            .querySelectorAll(".dropdown-menu")
-            .forEach((menu) => {
-
-                menu.classList.add("hidden");
-
-            });
-
-
-        document
-            .querySelectorAll(".dropdown-arrow")
-            .forEach((arrow) => {
-
-                arrow.classList.remove(
-                    "rotate-180"
-                );
-
-            });
-
-    });
 
 
     // =====================================
@@ -157,6 +125,7 @@ function initNavbar() {
     initAccessibility();
 
 }
+
 
 
 function initAccessibility() {
@@ -169,50 +138,49 @@ function initAccessibility() {
 
     buttons.forEach((button) => {
 
-        button.addEventListener(
-            "click",
-            () => {
+        button.addEventListener("click", () => {
 
-                const action =
-                    button.dataset.action;
+            const action =
+                button.dataset.action;
 
 
-                if (action === "increase") {
+            if (action === "increase") {
 
-                    changeFontSize(1);
-
-                }
-
-
-                if (action === "decrease") {
-
-                    changeFontSize(-1);
-
-                }
-
-
-                if (action === "reset") {
-
-                    resetAccessibility();
-
-                }
-
-
-                if (action === "theme") {
-
-                    toggleTheme();
-
-                }
+                changeFontSize(1);
 
             }
-        );
+
+
+            if (action === "decrease") {
+
+                changeFontSize(-1);
+
+            }
+
+
+            if (action === "reset") {
+
+                resetAccessibility();
+
+            }
+
+
+            if (action === "theme") {
+
+                toggleTheme();
+
+            }
+
+        });
 
     });
 
 }
 
 
+
 let currentFontSize = 16;
+
 
 
 function changeFontSize(amount) {
@@ -236,6 +204,7 @@ function changeFontSize(amount) {
 }
 
 
+
 function resetAccessibility() {
 
     currentFontSize = 16;
@@ -248,6 +217,7 @@ function resetAccessibility() {
     );
 
 }
+
 
 
 function toggleTheme() {

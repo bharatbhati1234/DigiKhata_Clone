@@ -1,25 +1,22 @@
-<section class="w-full py-16 md:py-20 block scroll-reveal">
+<section class="w-full py-10 md:py-14 block scroll-reveal">
 
     <div class="max-w-7xl mx-auto px-5">
 
         <!-- Section Heading -->
-        <div class="w-full lg:w-[700px] mx-auto text-center mb-12">
+        <div class="w-full lg:w-[700px] mx-auto text-center mb-5 md:mb-6">
 
-            <h1 class="text-[32px] lg:text-[48px] font-[800] text-gray-900">
+            <h1 class="text-[32px] md:text-[40px] lg:text-[48px] leading-[1.15] font-[800] text-gray-900">
                 {{cobrandPrepaidCardSolutions.title}}
             </h1>
-
-
 
         </div>
 
 
-         {{!-- paragraph --}}
+        {{!-- paragraph --}}
 
+        <div class="text-center max-w-4xl mx-auto mb-6 md:mb-8">
 
-        <div class="text-center max-w-4xl mx-auto">
-
-            <p class="mt-5  text-[16px] lg:ml-[140px] lg:mr-[140px] md:text-[18px] leading-7 text-[#4b4a4a]">
+            <p class="text-[16px] md:text-[18px] leading-7 text-[#4b4a4a] lg:px-[80px]">
                 {{cobrandPrepaidCardSolutions.description1}}
             </p>
 
@@ -27,14 +24,15 @@
 
 
         <!-- UseCases Content -->
-        <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 mt-10">
+        <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-5 lg:gap-6 mt-6">
 
-              <!-- left Column -->
-            <div class="w-full md:w-5/12 px-4 md:px-3">
+
+            <!-- Left Column -->
+            <div class="w-full md:w-[348px] flex flex-col justify-center">
 
                 {{#each cobrandPrepaidCardSolutions.leftServices}}
 
-                <div class="mb-8 bg-[#F4F4F4] max-w-[348px] p-[25px] rounded-[15px]">
+                <div class="w-full min-h-[280px] mb-6 last:mb-0 bg-[#F4F4F4] p-[25px] rounded-[15px]">
 
                     <!-- Image -->
                     <div class="w-full flex justify-start mb-5">
@@ -51,12 +49,13 @@
 
                     </div>
 
-                     <!-- Heading -->
-                    <h4 class="text-[20px] font-[600] font-unbounded text-gray-900 mb-3">
+
+                    <!-- Heading -->
+                    <h4 class="text-[20px] leading-7 font-[600] font-unbounded text-gray-900 mb-3">
                         {{heading}}
                     </h4>
 
-                    
+
                     <!-- Description -->
                     <p class="text-start text-[16px] leading-6 text-gray-600">
                         {{description}}
@@ -70,52 +69,11 @@
 
 
             <!-- Middle Column -->
-            <div class="w-full lg:w-[348px] md:w-5/12 px-4 md:px-2 rounded-[15px]">
+            <div class="w-full md:w-[348px] flex flex-col">
 
                 {{#each cobrandPrepaidCardSolutions.middleServices}}
 
-                <div class="mb-8 bg-[#F4F4F4] p-[25px] rounded-[15px]">
-
-                    <!-- Image -->
-                    <div class="w-full flex justify-start mb-5 ">
-
-                        <div class=" w-[60px] h-[60px] lg:w-[70px] lg:h-[70px]  bg-[white] rounded-full flex items-center justify-center overflow-hidden">
-
-                            <img
-                                src="{{image}}"
-                                alt="{{imageAlt}}"
-                              
-                                class="w-[42px] h-[42px] object-contain"
-                            >
-
-                        </div>
-
-                    </div>
-
-                    <!-- Heading -->
-                    <h4 class="text-[20px] font-[600] font-unbounded text-gray-900 mb-3">
-                        {{heading}}
-                    </h4>
-
-
-                    <!-- Description -->
-                      <p class="text-start text-[16px] leading-6 text-gray-600">
-                        {{description}}
-                    </p>
-
-                </div>
-
-                {{/each}}
-
-            </div>
-
-
-            <!-- Right Column -->
-            <div class="w-full md:w-5/12 px-4 md:px-3">
-
-                {{#each cobrandPrepaidCardSolutions.rightServices}}
-
-                <div class="mb-8 bg-[#F4F4F4] max-w-[348px] p-[25px] rounded-[15px]">
+                <div class="w-full min-h-[280px] mb-6 last:mb-0 bg-[#F4F4F4] p-[25px] rounded-[15px]">
 
                     <!-- Image -->
                     <div class="w-full flex justify-start mb-5">
@@ -132,15 +90,15 @@
 
                     </div>
 
-                     <!-- Heading -->
-                    <h4 class="text-[20px] font-[600] font-unbounded text-gray-900 mb-3">
+
+                    <!-- Heading -->
+                    <h4 class="text-[20px] leading-7 font-[600] font-unbounded text-gray-900 mb-3">
                         {{heading}}
                     </h4>
 
 
-
                     <!-- Description -->
-                     <p class="text-start text-[16px] leading-6 text-gray-600">
+                    <p class="text-start text-[16px] leading-6 text-gray-600">
                         {{description}}
                     </p>
 
@@ -148,8 +106,49 @@
 
                 {{/each}}
 
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="w-full md:w-[348px] flex flex-col justify-center">
+
+                {{#each cobrandPrepaidCardSolutions.rightServices}}
+
+                <div class="w-full min-h-[280px] mb-6 last:mb-0 bg-[#F4F4F4] p-[25px] rounded-[15px]">
+
+                    <!-- Image -->
+                    <div class="w-full flex justify-start mb-5">
+
+                        <div class="w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] bg-white rounded-full flex items-center justify-center overflow-hidden">
+
+                            <img
+                                src="{{image}}"
+                                alt="{{imageAlt}}"
+                                class="w-[42px] h-[42px] object-contain"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Heading -->
+                    <h4 class="text-[20px] leading-7 font-[600] font-unbounded text-gray-900 mb-3">
+                        {{heading}}
+                    </h4>
+
+
+                    <!-- Description -->
+                    <p class="text-start text-[16px] leading-6 text-gray-600">
+                        {{description}}
+                    </p>
+
+                </div>
+
+                {{/each}}
 
             </div>
+
 
         </div>
 
